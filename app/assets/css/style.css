@@ -18,8 +18,7 @@ body {
   max-width: 1280px; }
 
 body, html {
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -439,6 +438,28 @@ textarea {
   .greeting h2 {
     text-align: center; }
 
+.section-header {
+  text-align: center; }
+  .section-header h2 {
+    margin: 0;
+    color: white;
+    padding-bottom: 21px; }
+
+.header-line {
+  width: 87px;
+  height: 4px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 21px; }
+
+.service-item {
+  width: 24%;
+  height: 507px;
+  text-align: center;
+  float: left;
+  padding: 70px 0;
+  box-sizing: border-box; }
+
 .btn {
   display: block;
   width: 293px;
@@ -487,8 +508,21 @@ textarea {
 
 .l-welcome {
   background-color: #996699;
+  min-height: 450px;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  color: white; }
+
+.l-services {
+  padding: 80px 0;
+  background-color: #00cc99;
+  min-height: 450px;
+  color: white; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 @media print {
   * {

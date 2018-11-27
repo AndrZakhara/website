@@ -1,5 +1,18 @@
 .l-welcome {
     background-color: #996699;
+    min-height: 450px;
     height: 100vh;
     position: relative;
+    color: white;
+}
+.l-services {
+    padding: 80px 0;
+    background-color: #00cc99;
+    min-height: 450px;
+    color: white;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
