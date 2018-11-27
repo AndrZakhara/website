@@ -1,10 +1,24 @@
-.nav {
-  ul {
-    list-style: none;
-    li {
-      a {
-
-      }
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  li {
+    float: left;
+    a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 2px 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 3px;
+    }
+    a:hover:not(.active) {
+      background-color: #663366;
+    }
+    a.active {
+      background-color: #663366;
     }
   }
 }

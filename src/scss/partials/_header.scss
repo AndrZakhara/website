@@ -1,10 +1,16 @@
 .header {
-
+  position: relative;
+  
+  height: 93px;
 }
 .logo {
-  margin: -58px 0 0 -100px;
-  @include position(absolute, 50% 0 0 50%);
+  float: left;
+  // margin: 56px 0 0 10px;
+  // position: absolute;
+  // bottom: 0;  
+  // @include position(absolute, 50% 0 0 50%);
   img {
-
+    width: 118px;
+    height: 36px;
   }
 }

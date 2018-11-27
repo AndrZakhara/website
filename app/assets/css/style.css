@@ -9,13 +9,13 @@
 
 * {
   box-sizing: border-box;
-  font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
 body {
   font-family: 'Titillium Web';
   color: #444;
-  transition: all .4s .3s ease-in; }
+  transition: all .4s .3s ease-in;
+  max-width: 1280px; }
 
 body, html {
   min-height: 100vh;
@@ -387,14 +387,35 @@ textarea {
   font: inherit;
   /* 2 */ }
 
-.logo {
-  margin: -58px 0 0 -100px;
-  position: absolute;
-  top: 50%;
-  left: 50%; }
+.header {
+  position: relative;
+  height: 93px; }
 
-.nav ul {
-  list-style: none; }
+.logo {
+  float: left; }
+  .logo img {
+    width: 118px;
+    height: 36px; }
+
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  .topnav li {
+    float: left; }
+    .topnav li a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 2px 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 3px; }
+    .topnav li a:hover:not(.active) {
+      background-color: #663366; }
+    .topnav li a.active {
+      background-color: #663366; }
 
 @font-face {
   font-family: 'Titillium Web';
@@ -422,6 +443,13 @@ textarea {
   background: #333;
   color: #fff;
   text-shadow: none; }
+
+.l-welcome {
+  background-color: #996699;
+  height: 100vh; }
+
+body {
+  color: red; }
 
 @media print {
   * {
