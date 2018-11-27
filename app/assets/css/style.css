@@ -388,20 +388,27 @@ textarea {
   /* 2 */ }
 
 .header {
-  position: relative;
   height: 93px; }
 
 .logo {
-  float: left; }
+  float: left;
+  position: relative;
+  top: 56px;
+  margin-left: 42px; }
   .logo img {
     width: 118px;
     height: 36px; }
+
+.navbar {
+  position: relative;
+  top: 65px; }
 
 .topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  float: right; }
   .topnav li {
     float: left; }
     .topnav li a {
@@ -416,6 +423,30 @@ textarea {
       background-color: #663366; }
     .topnav li a.active {
       background-color: #663366; }
+
+.welcome {
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  height: 160px;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; }
+
+.greeting {
+  max-width: 620px;
+  margin: 0 auto; }
+  .greeting h2 {
+    text-align: center; }
+
+.btn {
+  display: block;
+  width: 293px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border-bottom: 4px solid #cc6633;
+  background-color: #ff6633; }
 
 @font-face {
   font-family: 'Titillium Web';
@@ -446,10 +477,8 @@ textarea {
 
 .l-welcome {
   background-color: #996699;
-  height: 100vh; }
-
-body {
-  color: red; }
+  height: 100vh;
+  position: relative; }
 
 @media print {
   * {

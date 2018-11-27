@@ -1,8 +1,13 @@
+.navbar {
+  position: relative;
+  top: 65px;
+}
 .topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  float: right;
   li {
     float: left;
     a {

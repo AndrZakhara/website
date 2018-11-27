@@ -66,7 +66,10 @@ gulp.task('bs-reload', function () {
 });
 
 gulp.task('default', ['css', 'js', 'browser-sync'], function () {
-    gulp.watch("src/scss/**/*.scss", ['css']);
+    gulp.watch("src/scss/**/*.scss", ['css'], 
+    function(event, cb) {
+        setTimeout(function(){gulp.start('sass');},1000) // задача выполниться через 500 миллисекунд и файл успеет сохраниться на диске
+    });
     gulp.watch("src/js/*.js", ['js']);
     gulp.watch("app/*.html", ['bs-reload']);
 });
