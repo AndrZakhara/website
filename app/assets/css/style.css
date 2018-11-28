@@ -511,6 +511,9 @@ textarea {
   .l-content--skills {
     background-color: #ffffff;
     color: #3c4661; }
+  .l-content--portfolio {
+    background-color: #ffdd99;
+    color: #393939; }
 
 .l-container {
   max-width: 1280px; }

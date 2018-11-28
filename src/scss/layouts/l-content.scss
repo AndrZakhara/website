@@ -17,4 +17,8 @@
     background-color: #ffffff;
     color: #3c4661;
   }
+  @at-root #{&}--portfolio {
+    background-color: #ffdd99;
+    color: #393939;
+  }
 }
