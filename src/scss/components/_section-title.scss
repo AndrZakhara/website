@@ -1,4 +1,7 @@
 .section-title {
+    @at-root #{&}--mb-form {
+        margin-bottom: 110px;
+    }
     @at-root #{&}__header {
         text-align: center;
         h2 {

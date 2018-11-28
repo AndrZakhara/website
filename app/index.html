@@ -31,18 +31,18 @@
         <div class="greeting">
           <h2>Hi there! We are the new kids on the block  and we build awesom websites and apps.</h2>
         </div>
-        <button class="btn btn-welcome-color">
+        <button class="btn btn--welcome-color">
           Work with us!
         </button>
       </div>
     </div>
-    <div class="l-services clearfix">
-      <section class="section-header">
-        <h2 class="section-main-header">Services we provide</h2>
-        <div class="header-line"></div>
-        <p class="section-main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, velit!</p>
-      </section>
-      <div class="l-section-items">
+    <div class="l-content l-content--services clearfix">      
+      <div class="l-container">
+        <section class="section-title section-title--mb-form">
+          <h2 class="section-title__header">Services we provide</h2>
+          <div class="section-title__line"></div>
+          <p class="section-title__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, velit!</p>
+        </section>
         <section class="section-item">
           <img src="assets/img/Flag icon.png" alt="flag">
           <h2>Title</h2>
@@ -65,14 +65,13 @@
         </section>
       </div>
     </div>
-
-    <div class="l-team clearfix">
-      <section class="section-header">
-        <h2 class="section-main-header">MEET OUR BEAUTIFUL TEAM</h2>
-        <div class="header-line"></div>
-        <p class="section-main-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, velit!</p>
-      </section>
-      <div class="l-section-items">
+    <div class="l-content l-content--team clearfix">
+      <div class="l-container">      
+        <section class="section-title section-title--mb-form">
+          <h2 class="section-title__header">MEET OUR BEAUTIFUL TEAM</h2>
+          <div class="section-title__line"></div>
+          <p class="section-title__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, velit!</p>
+        </section>      
         <section class="section-item">
           <img src="assets/img/Base.png" alt="flag">
           <h2>ANNE HATHAWAY</h2>
@@ -96,23 +95,21 @@
       </div>
     </div>
 
-    <div class="l-form l-form--light-color-scheema">
+    <div class="l-content l-content--form clearfix">
       <div class="l-container">
-        <section class="section-title">
+        <section class="section-title section-title--mb-form">
           <h2 class="section-title__header">GET IN TOUCH</h2>
           <div class="section-title__line"></div>
           <p class="section-title__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, velit!</p>
         </section>
-        <form action="">
-          <div>
-            <input type="text" placeholder="Your Name*">
-            <input type="email" placeholder="Your Email*">
-          </div> 
-          <textarea placeholder="Your Message *" cols="42" rows="5"></textarea>         
+        <form class="contact-form contact-form--main" action="">
+          <div class="l-input-form">
+            <input class="contact-form__input-text contact-form__input-text--main contact-form__input-text--main-fl" type="text" placeholder="Your Name*">
+            <input class="contact-form__input-text contact-form__input-text--main contact-form__input-text--main-fr" type="email" placeholder="Your Email*">
+            <textarea class="contact-form__textarea contact-form__textarea--main" placeholder="Your Message *" cols="42" rows="5"></textarea>
+            <input type="button" class="btn btn--form-color" value="Send message"/>
+          </div>
         </form>
-        <button class="btn btn-welcome-color">
-          Work with us!
-        </button>
       </div>
     </div>
 

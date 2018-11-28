@@ -1,0 +1,16 @@
+.l-content {
+  padding: 80px 0;
+  min-height: 450px;
+  @at-root #{&}--form {
+    background-color: #3c5499;
+    color: white;
+  }
+  @at-root #{&}--services {
+    background-color: #17c2a4;
+    color: white;
+  }
+  @at-root #{&}--team {
+    background-color: #e7f1f8;
+    color: #3c4661;
+  }
+}
