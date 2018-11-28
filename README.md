@@ -1,3 +1,3 @@
 Landing page web site
 
-Git pages:
+GitHub pages: https://andrzakhara.github.io/website/app/
