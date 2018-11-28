@@ -1,0 +1,21 @@
+.section-title {
+    @at-root #{&}__header {
+        text-align: center;
+        h2 {
+            margin: 0;
+            padding-bottom: 21px;
+        }
+    }
+    @at-root #{&}__line {
+        width: 87px;
+        height: 4px;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.15);
+        margin-bottom: 21px;
+    }
+    @at-root #{&}__info {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
