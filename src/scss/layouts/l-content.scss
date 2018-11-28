@@ -13,4 +13,8 @@
     background-color: #e7f1f8;
     color: #3c4661;
   }
+  @at-root #{&}--skills {
+    background-color: #ffffff;
+    color: #3c4661;
+  }
 }
