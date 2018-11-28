@@ -36,4 +36,30 @@
       margin: 0 auto;
     }
   }
+  @at-root #{&}--about {
+    width: 49.8%;
+    text-align: left;
+    padding: 0 30px;
+    img {
+      max-width: 100px;
+      height: auto;
+      float: left;
+      //display: inline-block;
+      margin-right: 5%;
+      //box-sizing: border-box;
+
+    }
+    span {
+      max-width: 330px;
+      width: 64%;
+      display: inline-block;
+      h4 {
+        margin-bottom: 0;
+      }
+      p {
+        max-width: 330px;
+        margin: 0;
+      }
+    }
+  }
 }

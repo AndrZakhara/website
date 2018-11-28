@@ -21,4 +21,8 @@
     background-color: #ffdd99;
     color: #393939;
   }
+  @at-root #{&}--about {
+    background-color: #d74680;
+    color: white;
+  }
 }
