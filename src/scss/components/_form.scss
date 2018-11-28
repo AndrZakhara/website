@@ -11,8 +11,9 @@
       padding: 0 20px;
       box-sizing: border-box;
     }
-    @at-root #{&}--main::placeholder {
-      // color: white;          
+    @at-root #{&}--main::placeholder::after {
+      content: '*';
+      color: red;
     }
     @at-root #{&}--main-fr {
       float: right;
@@ -22,7 +23,7 @@
     }
   }
   @at-root #{&}__textarea {
-    
+
     @at-root #{&}--main {
       display: block;
       border: 0;
@@ -34,6 +35,10 @@
       padding: 0 20px;
       margin-bottom: 50px;
       box-sizing: border-box;
+    }
+    @at-root #{&}--main::placeholder::after {
+      content: '*';
+      color: red;
     }
   }
 }

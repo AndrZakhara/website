@@ -498,7 +498,7 @@ textarea {
 
 .l-content {
   padding: 80px 0;
-  min-height: 450px; }
+  min-height: 100vh; }
   .l-content--form {
     background-color: #3c5499;
     color: white; }
@@ -516,7 +516,8 @@ textarea {
     color: #393939; }
 
 .l-container {
-  max-width: 1280px; }
+  max-width: 1280px;
+  margin: 0 auto; }
 
 .section-title--mb-form {
   margin-bottom: 110px; }
@@ -550,6 +551,14 @@ textarea {
   padding: 0 20px;
   box-sizing: border-box; }
 
+.contact-form__input-text--main:-ms-input-placeholder::after {
+  content: '*';
+  color: red; }
+
+.contact-form__input-text--main::placeholder::after {
+  content: '*';
+  color: red; }
+
 .contact-form__input-text--main-fr {
   float: right; }
 
@@ -568,6 +577,14 @@ textarea {
   margin-bottom: 50px;
   box-sizing: border-box; }
 
+.contact-form__textarea--main:-ms-input-placeholder::after {
+  content: '*';
+  color: red; }
+
+.contact-form__textarea--main::placeholder::after {
+  content: '*';
+  color: red; }
+
 .l-input-form {
   max-width: 860px;
   margin: 0 auto; }
@@ -584,20 +601,51 @@ textarea {
   .btn--form-color {
     background-color: #30bae7;
     border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-    color: white;
-    margin-bottom: 80px; }
+    color: white; }
   .btn--welcome-color {
     background-color: #eb7d4b;
     border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-    color: white;
-    margin-bottom: 80px; }
+    color: white; }
+  .btn--portfolio-color {
+    background-color: #17c2a4;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    color: white; }
 
 .btn:hover {
   font-size: 1.1em;
   cursor: pointer; }
 
-.btn-welcome-color {
-  color: white; }
+.section-content {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 20px; }
+  .section-content--portfolio {
+    width: 49.8%; }
+    .section-content--portfolio img {
+      max-width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto; }
+    .section-content--portfolio p {
+      text-align: center; }
+  .section-content--services {
+    width: 24.7%;
+    text-align: center;
+    padding: 0 30px; }
+    .section-content--services img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto; }
+  .section-content--team {
+    width: 24.7%;
+    text-align: center;
+    padding: 0 30px; }
+    .section-content--team img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto; }
 
 @font-face {
   font-family: 'Titillium Web';

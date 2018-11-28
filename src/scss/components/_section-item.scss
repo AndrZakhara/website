@@ -1,0 +1,39 @@
+.section-content {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  @at-root #{&}--portfolio {
+    width: 49.8%;
+    img {
+      max-width: 80%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  @at-root #{&}--services {
+    width: 24.7%;
+    text-align: center;
+    padding: 0 30px;
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  @at-root #{&}--team {
+    width: 24.7%;
+    text-align: center;
+    padding: 0 30px;
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
