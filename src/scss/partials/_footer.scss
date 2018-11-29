@@ -1,7 +1,6 @@
 .footer {
   height: 112px;
   background-color: #344b8e;
-  //padding-top: 50% - 5px;
 }
 .nav-social {
   margin: 0 auto;
@@ -18,8 +17,6 @@
   width: 100%;
   li {
     display: inline-block;
-    //float: left;
-    //margin: 0 3.4%;
     width: 13.9%;
     a {
       display: block;
@@ -30,9 +27,6 @@
       text-decoration: none;
       border-radius: 3px;
     }
-    //a:hover:not(.active) {
-    //  background-color: #663366;
-    //}
     a.active {
       color: #30bae7;
     }
