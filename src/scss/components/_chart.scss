@@ -1,34 +1,45 @@
 $configs: (
-  // chart-one: (
-  // 	svgSize: 200px,
-  // 	percentage: 32,
-  // 	strokeWidth: 1px,
-  // 	backgroundColor: #305556,
-  // 	foregroundColor: #79be9b,
-  // 	labelColor: #c6e8d7,
-  // 	labelFontSize: 2.5rem,
-  // 	duration: 3s,
-  // 	animationDelay: 1s
-  // ),
-  // chart-two: (
-  // 	svgSize: 200px,
-  // 	percentage: 50,
-  // 	strokeWidth: 15px,
-  // 	backgroundColor: #305556,
-  // 	foregroundColor: #d0f09e,
-  // 	labelColor: #c6e8d7,
-  // 	labelFontSize: 2.5rem,
-  // 	duration: 3s,
-  // 	animationDelay: 1s
-  // ),
-  chart-three: (
+  chart-wd: (
     svgSize: 200px,
     percentage: 75,
-    strokeWidth: 25px,
-    backgroundColor: #305556,
-    foregroundColor: #389967,
-    labelColor: #c6e8d7,
-    labelFontSize: 2.5rem,
+    strokeWidth: 15px,
+    backgroundColor: #dfe8ed,
+    foregroundColor: #30bae7,
+    labelColor: #3c4761,
+    labelFontSize: 3.5rem,
+    duration: 3s,
+    animationDelay: 1s
+  ),
+  chart-html: (
+    svgSize: 200px,
+    percentage: 75,
+    strokeWidth: 15px,
+    backgroundColor: #dfe8ed,
+    foregroundColor: #d74680    ,
+    labelColor: #3c4761,
+    labelFontSize: 3.5rem,
+    duration: 3s,
+    animationDelay: 1s
+  ),
+  chart-gd: (
+    svgSize: 200px,
+    percentage: 75,
+    strokeWidth: 15px,
+    backgroundColor: #dfe8ed,
+    foregroundColor: #15c7a8,
+    labelColor: #3c4761,
+    labelFontSize: 3.5rem,
+    duration: 3s,
+    animationDelay: 1s
+  ),
+  chart-ui: (
+    svgSize: 200px,
+    percentage: 75,
+    strokeWidth: 15px,
+    backgroundColor: #dfe8ed,
+    foregroundColor: #eb7d4b,
+    labelColor: #3c4761,
+    labelFontSize: 3.5rem,
     duration: 3s,
     animationDelay: 1s
   )
@@ -80,7 +91,6 @@ $labelData: '';
         stroke: map-get($param, foregroundColor);
         stroke-dasharray: $cOffSet $c;
         stroke-dashoffset: $cOffSet;
-        stroke-linecap: round;
         transform-origin: 50% 50%;
         transform: rotate(-90deg);
       }
@@ -119,7 +129,4 @@ $labelData: '';
 
 figure {
   margin: 1rem!important;
-}
-figcaption {
-  font-family: 'Abel', sans-serif;
 }
