@@ -597,13 +597,13 @@ a:hover {
   float: left;
   width: 100%; }
   .footer-nav li {
-    float: left;
-    margin: 0 3.4%; }
+    display: inline-block;
+    width: 13.9%; }
     .footer-nav li a {
       display: block;
       color: #fff;
       text-align: center;
-      padding: 2px 16px;
+      padding: 2px 4px;
       text-decoration: none;
       border-radius: 3px; }
     .footer-nav li a.active {

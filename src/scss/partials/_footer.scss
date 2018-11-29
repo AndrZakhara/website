@@ -17,13 +17,15 @@
   float: left;
   width: 100%;
   li {
-    float: left;
-    margin: 0 3.4%;
+    display: inline-block;
+    //float: left;
+    //margin: 0 3.4%;
+    width: 13.9%;
     a {
       display: block;
       color: #fff;
       text-align: center;
-      padding: 2px 16px;
+      padding: 2px 4px;
 
       text-decoration: none;
       border-radius: 3px;
