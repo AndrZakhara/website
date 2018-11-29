@@ -400,34 +400,8 @@ textarea {
     width: 118px;
     height: 36px; }
 
-.navbar {
-  position: relative;
-  top: 65px; }
-
-.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  float: right; }
-  .topnav li {
-    float: left; }
-    .topnav li a {
-      display: block;
-      color: #fff;
-      text-align: center;
-      padding: 2px 16px;
-      text-decoration: none;
-      text-transform: uppercase;
-      border-radius: 3px; }
-    .topnav li a:hover:not(.active) {
-      background-color: #663366; }
-    .topnav li a.active {
-      background-color: #663366; }
-
 .section-nav ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
   padding-top: 30px;
   overflow: hidden;
@@ -453,119 +427,6 @@ textarea {
     background-color: #ffffff; }
   .section-nav li a.active {
     background-color: #ffffff; }
-
-a {
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease; }
-
-a:hover {
-  color: tomato; }
-
-#menuToggle {
-  display: block;
-  position: relative;
-  top: 50px;
-  left: 50px;
-  z-index: 1;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none; }
-
-#menuToggle input {
-  margin-left: 80%;
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: 14px;
-  left: -5px;
-  cursor: pointer;
-  opacity: 0;
-  /* hide this */
-  z-index: 2;
-  /* and place it over the hamburger */
-  -webkit-touch-callout: none; }
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span {
-  margin-left: 80%;
-  top: 20px;
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #cdcdcd;
-  border-radius: 3px;
-  z-index: 1;
-  -ms-transform-origin: 4px 0px;
-      transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
-
-#menuToggle span:first-child {
-  -ms-transform-origin: 0% 0%;
-      transform-origin: 0% 0%; }
-
-#menuToggle span:nth-last-child(2) {
-  -ms-transform-origin: 0% 100%;
-      transform-origin: 0% 100%; }
-
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  -ms-transform: rotate(45deg) translate(-2px, -1px);
-      transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323; }
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  -ms-transform: rotate(0deg) scale(0.2, 0.2);
-      transform: rotate(0deg) scale(0.2, 0.2); }
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  -ms-transform: rotate(-45deg) translate(0, -1px);
-      transform: rotate(-45deg) translate(0, -1px); }
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu {
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  -ms-transform-origin: 0% 0%;
-      transform-origin: 0% 0%;
-  -ms-transform: translate(-100%, 0);
-      transform: translate(-100%, 0);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-
-#menu li {
-  padding: 10px 0;
-  font-size: 22px; }
-
-#menuToggle input:checked ~ ul {
-  -ms-transform: none;
-      transform: none; }
 
 .welcome {
   color: #fff;
@@ -796,7 +657,8 @@ a:hover {
     width: 24.7%;
     text-align: center;
     padding: 0 20px; }
-    .section-content--skills figure svg {
+    .section-content--skills .l-chart-skills {
+      width: 234px;
       margin: 0 auto; }
   .section-content--about {
     display: block;
@@ -1080,6 +942,25 @@ a:hover {
 figure {
   margin: 1rem !important; }
 
+.btn {
+  display: block;
+  width: 293px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 5px;
+  outline: 0 !important;
+  border: none;
+  border-bottom: 5px solid #cc6633;
+  background-color: #ff6633;
+  text-transform: uppercase; }
+
+.btn:hover {
+  font-size: 1.1em;
+  cursor: pointer; }
+
+.btn-welcome-color {
+  color: white; }
+
 @font-face {
   font-family: 'Titillium Web';
   font-style: normal;
@@ -1108,7 +989,7 @@ figure {
   text-shadow: none; }
 
 .l-welcome {
-  background-color: #996699;
+  background-color: #87509c;
   min-height: 450px;
   height: 100vh;
   position: relative;
@@ -1143,16 +1024,10 @@ figure {
     width: 100%; } }
 
 @media only screen and (min-width: 520px) {
-  .section-content--services {
-    width: 49%; }
-  .section-content--team {
-    width: 49%; }
   .section-content--skills {
     width: 49%; }
-  .section-content--portfolio {
-    width: 100%; }
-  .section-content--about {
-    width: 100%; } }
+  .l-container {
+    max-width: 560px; } }
 
 @media only screen and (min-width: 768px) {
   .section-content--services {
@@ -1166,15 +1041,149 @@ figure {
   .section-content--about {
     width: 49.8%; }
   .contact-form__input-text--main {
-    width: 47.7%; } }
+    width: 47.7%; }
+  .l-container {
+    max-width: 760px; }
+  .navbar-checkbox {
+    display: none; }
+  .navbar {
+    position: relative;
+    top: 65px; }
+  .topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right; }
+    .topnav li {
+      float: left; }
+      .topnav li a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 2px 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 3px; }
+      .topnav li a:hover:not(.active) {
+        background-color: #663366; }
+      .topnav li a.active {
+        background-color: #663366; } }
+
+@media only screen and (min-width: 1024px) {
+  .l-container {
+    max-width: 960px; }
+  .section-content--skills {
+    width: 24.7%; } }
 
 @media only screen and (min-width: 1140px) {
   .section-content--services {
     width: 24.7%; }
   .section-content--team {
-    width: 24.7%; }
-  .section-content--skills {
     width: 24.7%; } }
+
+@media only screen and (min-width: 1280px) {
+  .l-container {
+    max-width: 1140px; } }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none; }
+    .navbar a {
+      text-decoration: none;
+      color: #ffffff;
+      transition: color 0.3s ease; }
+    .navbar a:hover {
+      color: #bbbb; }
+  .navbar input {
+    margin-left: 80%;
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 14px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none; }
+  .navbar span {
+    margin-left: 80%;
+    top: 20px;
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: 1;
+    -ms-transform-origin: 4px 0px;
+        transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease; }
+  .navbar span:first-child {
+    -ms-transform-origin: 0% 0%;
+        transform-origin: 0% 0%; }
+  .navbar span:nth-last-child(2) {
+    -ms-transform-origin: 0% 100%;
+        transform-origin: 0% 100%; }
+  .navbar input:checked ~ span {
+    opacity: 1;
+    -ms-transform: rotate(45deg) translate(-2px, -1px);
+        transform: rotate(45deg) translate(-2px, -1px);
+    background: #ffffff; }
+  .navbar input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    -ms-transform: rotate(0deg) scale(0.2, 0.2);
+        transform: rotate(0deg) scale(0.2, 0.2); }
+  .navbar input:checked ~ span:nth-last-child(2) {
+    -ms-transform: rotate(-45deg) translate(0, -1px);
+        transform: rotate(-45deg) translate(0, -1px); }
+  .topnav {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #572a57;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    -ms-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+    -ms-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+  .topnav li {
+    padding: 10px 0;
+    font-size: 22px; }
+  .navbar input:checked ~ ul {
+    -ms-transform: none;
+        transform: none; } }
+
+@media only screen and (max-width: 870px) {
+  .footer {
+    height: auto; }
+  .nav-social {
+    top: 0px; }
+  .footer-nav {
+    float: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; }
+    .footer-nav li {
+      display: block;
+      width: 100%; }
+      .footer-nav li a {
+        width: 150px;
+        margin: 0 auto; } }
 
 @media print {
   * {
