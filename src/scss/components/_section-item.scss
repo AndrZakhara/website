@@ -36,7 +36,19 @@
       margin: 0 auto;
     }
   }
+  @at-root #{&}--skills {
+    width: 24.7%;
+    text-align: center;
+    padding: 0 20px;
+    figure {
+      svg{
+        margin: 0 auto;
+      }
+    }
+  }
   @at-root #{&}--about {
+    display: block;
+    float: left;
     width: 49.8%;
     text-align: left;
     padding: 0 30px;
@@ -44,10 +56,7 @@
       max-width: 100px;
       height: auto;
       float: left;
-      //display: inline-block;
       margin-right: 5%;
-      //box-sizing: border-box;
-
     }
     span {
       max-width: 330px;

@@ -791,7 +791,15 @@ a:hover {
       height: auto;
       display: block;
       margin: 0 auto; }
+  .section-content--skills {
+    width: 24.7%;
+    text-align: center;
+    padding: 0 20px; }
+    .section-content--skills figure svg {
+      margin: 0 auto; }
   .section-content--about {
+    display: block;
+    float: left;
     width: 49.8%;
     text-align: left;
     padding: 0 30px; }
@@ -1115,6 +1123,50 @@ figure {
   content: "";
   display: table;
   clear: both; }
+
+@media only screen and (min-width: 320px) {
+  .section-content--services {
+    width: 100%; }
+  .section-content--team {
+    width: 100%; }
+  .section-content--skills {
+    width: 100%; }
+  .section-content--portfolio {
+    width: 100%; }
+  .section-content--about {
+    width: 100%; } }
+
+@media only screen and (min-width: 520px) {
+  .section-content--services {
+    width: 49%; }
+  .section-content--team {
+    width: 49%; }
+  .section-content--skills {
+    width: 49%; }
+  .section-content--portfolio {
+    width: 100%; }
+  .section-content--about {
+    width: 100%; } }
+
+@media only screen and (min-width: 768px) {
+  .section-content--services {
+    width: 49%; }
+  .section-content--team {
+    width: 49%; }
+  .section-content--skills {
+    width: 49%; }
+  .section-content--portfolio {
+    width: 49%; }
+  .section-content--about {
+    width: 49.8%; } }
+
+@media only screen and (min-width: 1140px) {
+  .section-content--services {
+    width: 24.7%; }
+  .section-content--team {
+    width: 24.7%; }
+  .section-content--skills {
+    width: 24.7%; } }
 
 @media print {
   * {
