@@ -691,7 +691,7 @@ a:hover {
   background-color: #273a71;
   color: white;
   height: 56px;
-  min-width: 47.7%;
+  width: 47.7%;
   margin: 0 0 32px 0;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -732,7 +732,8 @@ a:hover {
 
 .l-input-form {
   max-width: 860px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 10px; }
 
 .btn {
   display: block;
@@ -1134,6 +1135,11 @@ figure {
   .section-content--portfolio {
     width: 100%; }
   .section-content--about {
+    width: 100%; }
+  .section-content .l-container {
+    padding: 0 5px;
+    box-sizing: border-box; }
+  .contact-form__input-text--main {
     width: 100%; } }
 
 @media only screen and (min-width: 520px) {
@@ -1158,7 +1164,9 @@ figure {
   .section-content--portfolio {
     width: 49%; }
   .section-content--about {
-    width: 49.8%; } }
+    width: 49.8%; }
+  .contact-form__input-text--main {
+    width: 47.7%; } }
 
 @media only screen and (min-width: 1140px) {
   .section-content--services {
