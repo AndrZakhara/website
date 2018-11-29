@@ -27,6 +27,41 @@
     }
   }
 }
+.section-nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    width: 380px;
+    margin: 0 auto;
+  }
+  li {
+    float: left;
+    margin: 0 5px;
+
+    a {
+      display: inline-block;
+      color: #393939;
+      text-align: center;
+      padding: 7px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, 0.078);
+      width: 82px;
+      height: 38px;
+      vertical-align: middle;
+    }
+    a:hover:not(.active) {
+      background-color: #ffffff;
+    }
+    a.active {
+      background-color: #ffffff;
+    }
+  }
+}
 
 a
 {
