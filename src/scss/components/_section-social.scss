@@ -1,0 +1,59 @@
+.section-social-nav {
+  padding: 0;
+  @at-root #{&}__fb {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url('/assets/img/social_sprite.png');
+      background-repeat: no-repeat;
+    }
+  }
+  @at-root #{&}__tw {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url('/assets/img/social_sprite.png');
+      background-repeat: no-repeat;
+      background-position: -43px 0;
+    }
+  }
+  @at-root #{&}__in {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url('/assets/img/social_sprite.png');
+      background-repeat: no-repeat;
+      background-position: -86px 0;
+    }
+  }
+  @at-root #{&}__mail {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url('/assets/img/social_sprite.png');
+      background-repeat: no-repeat;
+      background-position: -129px 0;
+    }
+  }
+
+}
