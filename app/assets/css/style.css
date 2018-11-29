@@ -819,7 +819,7 @@ a:hover {
     animation: offset 3s ease-in-out forwards;
     animation-delay: 1s; }
   .chart-wd.animate figcaption:after {
-    animation: chart-wd-label 3s steps(75) forwards;
+    animation: chart-wd-label 3s steps(90) forwards;
     animation-delay: 1s; }
   .chart-wd svg {
     width: 100%;
@@ -833,8 +833,8 @@ a:hover {
       stroke-width: 15px; }
     .chart-wd svg .circle-foreground {
       stroke: #30bae7;
-      stroke-dasharray: 435.675px 580.9px;
-      stroke-dashoffset: 435.675px;
+      stroke-dasharray: 522.81px 580.9px;
+      stroke-dashoffset: 522.81px;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
       -ms-transform: rotate(-90deg);
@@ -859,7 +859,7 @@ a:hover {
 
 @keyframes chart-wd-label {
   100% {
-    transform: translateY(-262.5rem); } }
+    transform: translateY(-315rem); } }
 
 .chart-html {
   width: 200px;
@@ -921,7 +921,7 @@ a:hover {
     animation: offset 3s ease-in-out forwards;
     animation-delay: 1s; }
   .chart-gd.animate figcaption:after {
-    animation: chart-gd-label 3s steps(75) forwards;
+    animation: chart-gd-label 3s steps(70) forwards;
     animation-delay: 1s; }
   .chart-gd svg {
     width: 100%;
@@ -935,8 +935,8 @@ a:hover {
       stroke-width: 15px; }
     .chart-gd svg .circle-foreground {
       stroke: #15c7a8;
-      stroke-dasharray: 435.675px 580.9px;
-      stroke-dashoffset: 435.675px;
+      stroke-dasharray: 406.63px 580.9px;
+      stroke-dashoffset: 406.63px;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
       -ms-transform: rotate(-90deg);
@@ -961,7 +961,7 @@ a:hover {
 
 @keyframes chart-gd-label {
   100% {
-    transform: translateY(-262.5rem); } }
+    transform: translateY(-245rem); } }
 
 .chart-ui {
   width: 200px;
@@ -972,7 +972,7 @@ a:hover {
     animation: offset 3s ease-in-out forwards;
     animation-delay: 1s; }
   .chart-ui.animate figcaption:after {
-    animation: chart-ui-label 3s steps(75) forwards;
+    animation: chart-ui-label 3s steps(85) forwards;
     animation-delay: 1s; }
   .chart-ui svg {
     width: 100%;
@@ -986,8 +986,8 @@ a:hover {
       stroke-width: 15px; }
     .chart-ui svg .circle-foreground {
       stroke: #eb7d4b;
-      stroke-dasharray: 435.675px 580.9px;
-      stroke-dashoffset: 435.675px;
+      stroke-dasharray: 493.765px 580.9px;
+      stroke-dashoffset: 493.765px;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
       -ms-transform: rotate(-90deg);
@@ -1012,7 +1012,7 @@ a:hover {
 
 @keyframes chart-ui-label {
   100% {
-    transform: translateY(-262.5rem); } }
+    transform: translateY(-297.5rem); } }
 
 @keyframes offset {
   100% {
