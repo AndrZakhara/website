@@ -469,6 +469,32 @@ textarea {
   max-width: 1280px;
   margin: 0 auto; }
 
+.l-container {
+  max-width: 1280px;
+  margin: 0 auto; }
+
+.l-content {
+  padding: 80px 0;
+  min-height: 100vh; }
+  .l-content--form {
+    background-color: #3c5499;
+    color: white; }
+  .l-content--services {
+    background-color: #17c2a4;
+    color: white; }
+  .l-content--team {
+    background-color: #e7f1f8;
+    color: #3c4661; }
+  .l-content--skills {
+    background-color: #ffffff;
+    color: #3c4661; }
+  .l-content--portfolio {
+    background-color: #ffdd99;
+    color: #393939; }
+  .l-content--about {
+    background-color: #d74680;
+    color: white; }
+
 .footer {
   height: 112px;
   background-color: #344b8e; }
@@ -498,32 +524,6 @@ textarea {
       border-radius: 3px; }
     .footer-nav li a.active {
       color: #30bae7; }
-
-.l-content {
-  padding: 80px 0;
-  min-height: 100vh; }
-  .l-content--form {
-    background-color: #3c5499;
-    color: white; }
-  .l-content--services {
-    background-color: #17c2a4;
-    color: white; }
-  .l-content--team {
-    background-color: #e7f1f8;
-    color: #3c4661; }
-  .l-content--skills {
-    background-color: #ffffff;
-    color: #3c4661; }
-  .l-content--portfolio {
-    background-color: #ffdd99;
-    color: #393939; }
-  .l-content--about {
-    background-color: #d74680;
-    color: white; }
-
-.l-container {
-  max-width: 1280px;
-  margin: 0 auto; }
 
 .section-title--mb-form {
   margin-bottom: 110px; }

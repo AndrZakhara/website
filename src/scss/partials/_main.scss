@@ -1,3 +1,33 @@
-.main {
-
+.l-container {
+    max-width: 1280px;
+    margin: 0 auto;
 }
+.l-content {
+    padding: 80px 0;
+    min-height: 100vh;
+    @at-root #{&}--form {
+      background-color: #3c5499;
+      color: white;
+    }
+    @at-root #{&}--services {
+      background-color: #17c2a4;
+      color: white;
+    }
+    @at-root #{&}--team {
+      background-color: #e7f1f8;
+      color: #3c4661;
+    }
+    @at-root #{&}--skills {
+      background-color: #ffffff;
+      color: #3c4661;
+    }
+    @at-root #{&}--portfolio {
+      background-color: #ffdd99;
+      color: #393939;
+    }
+    @at-root #{&}--about {
+      background-color: #d74680;
+      color: white;
+    }
+}
+  
