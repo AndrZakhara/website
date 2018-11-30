@@ -6,15 +6,24 @@
   border-radius: 5px;
   outline: 0 !important;
   border: none;
-  border-bottom: 5px solid #cc6633;
-  background-color: #ff6633;
   text-transform: uppercase;
+  @at-root #{&}--form-color {
+    background-color: #30bae7;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    color: white;
+  }
+  @at-root #{&}--welcome-color {
+    background-color: #eb7d4b;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    color: white;
+  }
+  @at-root #{&}--portfolio-color {
+    background-color: #17c2a4;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    color: white;
+  }
 }
 .btn:hover {
   font-size: 1.1em;
   cursor: pointer;
-}
-.btn-welcome-color {
-  color: white;
-  // font-weight: bold;
 }

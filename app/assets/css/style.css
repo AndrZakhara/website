@@ -596,32 +596,6 @@ textarea {
   margin: 0 auto;
   padding: 0 10px; }
 
-.btn {
-  display: block;
-  width: 293px;
-  height: 70px;
-  margin: 0 auto;
-  border-radius: 5px;
-  outline: 0 !important;
-  border: none;
-  text-transform: uppercase; }
-  .btn--form-color {
-    background-color: #30bae7;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-    color: white; }
-  .btn--welcome-color {
-    background-color: #eb7d4b;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-    color: white; }
-  .btn--portfolio-color {
-    background-color: #17c2a4;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-    color: white; }
-
-.btn:hover {
-  font-size: 1.1em;
-  cursor: pointer; }
-
 .section-content {
   display: inline-block;
   box-sizing: border-box;
@@ -950,16 +924,23 @@ figure {
   border-radius: 5px;
   outline: 0 !important;
   border: none;
-  border-bottom: 5px solid #cc6633;
-  background-color: #ff6633;
   text-transform: uppercase; }
+  .btn--form-color {
+    background-color: #30bae7;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    color: white; }
+  .btn--welcome-color {
+    background-color: #eb7d4b;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    color: white; }
+  .btn--portfolio-color {
+    background-color: #17c2a4;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
+    color: white; }
 
 .btn:hover {
   font-size: 1.1em;
   cursor: pointer; }
-
-.btn-welcome-color {
-  color: white; }
 
 @font-face {
   font-family: 'Titillium Web';
