@@ -428,21 +428,6 @@ textarea {
   .section-nav li a.active {
     background-color: #ffffff; }
 
-.welcome {
-  color: #fff;
-  width: 100%;
-  margin: 0 auto;
-  height: 160px;
-  position: absolute;
-  top: 50%;
-  margin-top: -50px; }
-
-.greeting {
-  max-width: 620px;
-  margin: 0 auto; }
-  .greeting h2 {
-    text-align: center; }
-
 .section-header {
   text-align: center; }
   .section-header h2 {
@@ -494,57 +479,6 @@ textarea {
   .l-content--about {
     background-color: #d74680;
     color: white; }
-
-.footer {
-  height: 112px;
-  background-color: #344b8e; }
-
-.nav-social {
-  margin: 0 auto;
-  position: relative;
-  top: 35px;
-  max-width: 1280px; }
-
-.footer-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0 4%;
-  overflow: hidden;
-  float: left;
-  width: 100%; }
-  .footer-nav li {
-    display: inline-block;
-    width: 13.9%; }
-    .footer-nav li a {
-      display: block;
-      color: #fff;
-      text-align: center;
-      padding: 2px 4px;
-      text-decoration: none;
-      border-radius: 3px; }
-    .footer-nav li a.active {
-      color: #30bae7; }
-
-.section-title--mb-form {
-  margin-bottom: 110px; }
-
-.section-title__header {
-  text-align: center; }
-  .section-title__header h2 {
-    margin: 0;
-    padding-bottom: 21px; }
-
-.section-title__line {
-  width: 87px;
-  height: 4px;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.15);
-  margin-bottom: 21px; }
-
-.section-title__info {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto; }
 
 .contact-form__input-text--main {
   border: 0;
@@ -654,6 +588,27 @@ textarea {
       .section-content--about span p {
         max-width: 330px;
         margin: 0; }
+
+.section-title--mb-form {
+  margin-bottom: 110px; }
+
+.section-title__header {
+  text-align: center; }
+  .section-title__header h2 {
+    margin: 0;
+    padding-bottom: 21px; }
+
+.section-title__line {
+  width: 87px;
+  height: 4px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 21px; }
+
+.section-title__info {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto; }
 
 .section-social-nav {
   padding: 0; }
@@ -915,6 +870,51 @@ textarea {
 
 figure {
   margin: 1rem !important; }
+
+.welcome {
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+  height: 160px;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; }
+
+.greeting {
+  max-width: 620px;
+  margin: 0 auto; }
+  .greeting h2 {
+    text-align: center; }
+
+.footer {
+  height: 112px;
+  background-color: #344b8e; }
+
+.nav-social {
+  margin: 0 auto;
+  position: relative;
+  top: 35px;
+  max-width: 1280px; }
+
+.footer-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 4%;
+  overflow: hidden;
+  float: left;
+  width: 100%; }
+  .footer-nav li {
+    display: inline-block;
+    width: 13.9%; }
+    .footer-nav li a {
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 2px 4px;
+      text-decoration: none;
+      border-radius: 3px; }
+    .footer-nav li a.active {
+      color: #30bae7; }
 
 .btn {
   display: block;
