@@ -1,6 +1,6 @@
 .footer {
   height: 112px;
-  background-color: #344b8e;
+  background-color: $footer-bg-color;
 }
 .nav-social {
   margin: 0 auto;
@@ -19,6 +19,8 @@
     display: inline-block;
     width: 13.9%;
     a {
+      font-family: "TitilliumWeb-SemiBold", sans-serif;
+      font-size: 20px;
       display: block;
       color: #fff;
       text-align: center;
