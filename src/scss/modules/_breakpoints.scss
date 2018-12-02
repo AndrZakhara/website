@@ -65,6 +65,8 @@
   .navbar {
     position: relative;
     top: 65px;
+    //font-weight: $font-bold;
+    font-size: 16px;
   }
   .topnav {
     list-style-type: none;
@@ -75,6 +77,8 @@
     li {
       float: left;
       a {
+        font-weight: $font-regular;
+        font-size: 16px;
         display: block;
         color: #fff;
         text-align: center;
