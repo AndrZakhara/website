@@ -34,15 +34,11 @@
 
 * {
   box-sizing: border-box;
-  font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
 body {
   color: #444;
   transition: all .4s .3s ease-in; }
-
-body, html {
-  min-height: 100vh; }
 
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -410,173 +406,95 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+.welcome-wrapper {
+  background-color: #87509c;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+
 .header {
-  height: 93px;
-  max-width: 1280px;
-  margin: 0 auto; }
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 92px; }
 
 .logo {
   float: left;
   position: relative;
-  top: 56px;
+  top: 55px;
   margin-left: 42px; }
   .logo img {
     width: 118px;
     height: 36px; }
 
-.btn {
-  display: block;
-  width: 293px;
-  height: 70px;
+.welcome-title {
+  max-width: 1140px;
   margin: 0 auto;
-  border-radius: 5px;
-  outline: 0 !important;
-  border: none;
-  text-transform: uppercase; }
-  .btn--form-color {
-    background-color: #30bae7;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-    color: white; }
-  .btn--welcome-color {
+  padding: 0 20px;
+  width: 100%;
+  max-width: 924px;
+  font-family: "TitilliumWeb-Bold", sans-serif;
+  font-size: 21px;
+  text-align: center;
+  color: #f7f3ea;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  .welcome-title h1 {
+    line-height: 1.1;
+    margin-bottom: 60px; }
+  .welcome-title .btn-welcome {
+    display: inline-block;
+    cursor: pointer;
     background-color: #eb7d4b;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-    color: white; }
-  .btn--portfolio-color {
-    background-color: #17c2a4;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.15);
-    color: white; }
+    box-shadow: 0px 5px #c86a40;
+    height: 70px;
+    width: 293px;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+    font-family: "TitilliumWeb-SemiBold", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #ffffff; }
+    .welcome-title .btn-welcome:active {
+      box-shadow: 0 2px #c86a40;
+      -ms-transform: translateY(4px);
+          transform: translateY(4px); }
 
-.btn:hover {
-  font-size: 1.1em;
-  cursor: pointer; }
+.navbar-checkbox {
+  display: none; }
 
-@font-face {
-  font-family: 'TitilliumWeb-Regular';
-  src: url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.eot");
-  src: url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.woff") format("woff"), url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.ttf") format("truetype"), url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.svg#TitilliumWeb") format("svg"); }
+.navbar {
+  position: relative;
+  top: 58px;
+  font-size: 16px; }
 
-@font-face {
-  font-family: 'TitilliumWeb-Bold';
-  src: url("../fonts/TitilliumWeb-Bold/TitilliumWeb-Bold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'TitilliumWeb-Regular';
-  src: url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'TitilliumWeb-Light';
-  src: url("../fonts/TitilliumWeb-Light/TitilliumWeb-Light.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'TitilliumWeb-SemiBold';
-  src: url("../fonts/TitilliumWeb-SemiBold/TitilliumWeb-SemiBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'TitilliumWeb-Italic';
-  src: url("../fonts/TitilliumWeb-Italic/TitilliumWeb-Italic.ttf") format("truetype"); }
-
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::-webkit-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-@media only screen and (min-width: 320px) {
-  .section-content--services {
-    width: 100%; }
-  .section-content--team {
-    width: 100%; }
-  .section-content--skills {
-    width: 100%; }
-  .section-content--portfolio {
-    width: 100%; }
-  .section-content--about {
-    width: 100%; }
-  .section-content .l-container {
-    padding: 0 5px;
-    box-sizing: border-box; }
-  .contact-form__input-text--main {
-    width: 100%; } }
-
-@media only screen and (min-width: 520px) {
-  .section-content--skills {
-    width: 49%; }
-  .l-container {
-    max-width: 560px; } }
-
-@media only screen and (min-width: 768px) {
-  .section-content--services {
-    width: 49%; }
-  .section-content--team {
-    width: 49%; }
-  .section-content--skills {
-    width: 49%; }
-  .section-content--portfolio {
-    width: 49%; }
-  .section-content--about {
-    width: 49.8%; }
-  .contact-form__input-text--main {
-    width: 47.7%; }
-  .l-container {
-    max-width: 760px; }
-  .navbar-checkbox {
-    display: none; }
-  .navbar {
-    position: relative;
-    top: 65px;
-    font-size: 16px; }
-  .topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    float: right; }
-    .topnav li {
-      float: left; }
-      .topnav li a {
-        font-weight: "TitilliumWeb-Regular", sans-serif;
-        font-size: 16px;
-        display: block;
-        color: #fff;
-        text-align: center;
-        padding: 2px 16px;
-        text-decoration: none;
-        text-transform: uppercase;
-        border-radius: 3px; }
-      .topnav li a:hover:not(.active) {
-        background-color: #663366; }
-      .topnav li a.active {
-        background-color: #663366; } }
-
-@media only screen and (min-width: 1024px) {
-  .l-container {
-    max-width: 960px; }
-  .section-content--skills {
-    width: 24.7%; } }
-
-@media only screen and (min-width: 1140px) {
-  .section-content--services {
-    width: 24.7%; }
-  .section-content--team {
-    width: 24.7%; } }
-
-@media only screen and (min-width: 1280px) {
-  .l-container {
-    max-width: 1140px; } }
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right; }
+  .topnav li {
+    float: left;
+    margin: 0 2px; }
+    .topnav li a {
+      font-weight: "TitilliumWeb-Regular", sans-serif;
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      vertical-align: middle;
+      padding: 8px 17px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 5px; }
+    .topnav li a:hover:not(.active) {
+      background-color: #643a79; }
+    .topnav li a.active {
+      background-color: #643a79; }
 
 @media only screen and (max-width: 768px) {
   .navbar {
@@ -659,6 +577,118 @@ textarea {
   .navbar input:checked ~ ul {
     -ms-transform: none;
         transform: none; } }
+
+.section-nav ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 30px;
+  overflow: hidden;
+  width: 380px;
+  margin: 0 auto; }
+
+.section-nav li {
+  float: left;
+  margin: 0 5px; }
+  .section-nav li a {
+    display: inline-block;
+    color: #393939;
+    text-align: center;
+    padding: 7px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.078);
+    width: 82px;
+    height: 38px;
+    vertical-align: middle; }
+  .section-nav li a:hover:not(.active) {
+    background-color: #ffffff; }
+  .section-nav li a.active {
+    background-color: #ffffff; }
+
+@font-face {
+  font-family: 'TitilliumWeb-Regular';
+  src: url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.eot");
+  src: url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.woff") format("woff"), url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.ttf") format("truetype"), url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.svg#TitilliumWeb") format("svg"); }
+
+@font-face {
+  font-family: 'TitilliumWeb-Bold';
+  src: url("../fonts/TitilliumWeb-Bold/TitilliumWeb-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'TitilliumWeb-Regular';
+  src: url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'TitilliumWeb-Light';
+  src: url("../fonts/TitilliumWeb-Light/TitilliumWeb-Light.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'TitilliumWeb-SemiBold';
+  src: url("../fonts/TitilliumWeb-SemiBold/TitilliumWeb-SemiBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'TitilliumWeb-Italic';
+  src: url("../fonts/TitilliumWeb-Italic/TitilliumWeb-Italic.ttf") format("truetype"); }
+
+::-moz-selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none; }
+
+::-moz-selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none; }
+
+::-webkit-selection {
+  background: #333;
+  color: #fff;
+  text-shadow: none; }
+
+@media only screen and (min-width: 320px) {
+  .section-content--services {
+    width: 100%; }
+  .section-content--team {
+    width: 100%; }
+  .section-content--skills {
+    width: 100%; }
+  .section-content--portfolio {
+    width: 100%; }
+  .section-content--about {
+    width: 100%; }
+  .section-content .l-container {
+    padding: 0 5px;
+    box-sizing: border-box; }
+  .contact-form__input-text--main {
+    width: 100%; } }
+
+@media only screen and (min-width: 520px) {
+  .section-content--skills {
+    width: 49%; }
+  .l-container {
+    max-width: 560px; } }
+
+@media only screen and (min-width: 1024px) {
+  .l-container {
+    max-width: 960px; }
+  .section-content--skills {
+    width: 24.7%; } }
+
+@media only screen and (min-width: 1140px) {
+  .section-content--services {
+    width: 24.7%; }
+  .section-content--team {
+    width: 24.7%; } }
+
+@media only screen and (min-width: 1280px) {
+  .l-container {
+    max-width: 1140px; } }
 
 @media only screen and (max-width: 870px) {
   .footer {

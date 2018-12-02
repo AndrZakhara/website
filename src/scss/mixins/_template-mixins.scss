@@ -1,3 +1,8 @@
+@mixin wrapper ($width: 1140px) {
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 @mixin block-header {
   text-align: center;
   h1 {
@@ -9,7 +14,7 @@
 @mixin block-header-line {
   width: 87px;
   height: 4px;
-  background-color: rgba(0, 0, 0, .149);
+  background-color: $line-color;
   margin: auto;
   margin-bottom: 25px;
 }
@@ -23,12 +28,23 @@
   border-radius: 5px;
   border: none;
   margin: auto;
-  font-family: $font-bold;
+  font-family: $font-semiBold;
   font-size: 18px;
+  text-transform: uppercase;
   color: $text-btn-color;
   &:active {
     box-shadow: 0 2px $shadow-color;
     transform: translateY(4px);
+  }
+}
+@mixin list {
+  list-style: none;
+}
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
   }
 }
 
