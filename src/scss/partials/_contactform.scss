@@ -1,69 +1,131 @@
-.form-wrapper {
+
+.contact-form-main-wrapper {
   background-color: $get-in-touch-bg-color;
-  height: 920px;
-
-  .contact-form {
+  min-height: 820px;
+  padding-top: 90px;
+  padding-bottom: 110px;
+  .form-wrapper {
     @include wrapper;
-    .get-in-touch-header{
-      @include block-header;
-    }
-    .get-in-touch-header-line {
-      @include block-header-line;
-    }
-
-    @at-root #{&}__input-text {
-      @at-root #{&}--main {
-        border: 0;
-        border-radius: 4px;
-        background-color: #273a71;
-        color: white;
-        height: 56px;
-        width: 47.7%;
-        margin: 0 0 32px 0;
-        padding: 0 20px;
-        box-sizing: border-box;
-      }
-      @at-root #{&}--main::placeholder::after {
-        content: '*';
-        color: red;
-      }
-      @at-root #{&}--main-fr {
-        float: right;
-      }
-      @at-root #{&}--main-fl {
-        float: left;
-      }
-    }
-    @at-root #{&}__textarea {
-
-      @at-root #{&}--main {
-        display: block;
-        border: 0;
-        border-radius: 4px;
-        background-color: #273a71;
-        color: white;
-        width: 100%;
-        height: 200px;
-        padding: 0 20px;
-        margin-bottom: 50px;
-        box-sizing: border-box;
-      }
-      @at-root #{&}--main::placeholder::after {
-        content: '*';
-        color: red;
-      }
-    }
-    .l-input-form {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 10px;
-    }
     .btn-contact-form {
       @include button($btn-form-primary-color, $btn-form-secondary-color);
       margin: 0 auto;
       display: block;
     }
-
+    .contact-form-input-text {
+      border: 0;
+      border-radius: 4px;
+      background-color: #273a71;
+      color: white;
+      height: 56px;
+      width: 47.7%;
+      margin: 0 0 32px 0;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    .contact-form-textarea {
+      display: block;
+      border: 0;
+      border-radius: 4px;
+      background-color: #273a71;
+      color: white;
+      width: 100%;
+      height: 200px;
+      padding: 0 20px;
+      margin-bottom: 50px;
+      box-sizing: border-box;
+    }
+    .float-left {
+      float: left;
+    }
+    .float-right {
+      float: right;
+    }
   }
 }
+
+.get-in-touch-title {
+  color: white;
+  padding-bottom: 70px;
+  @include block-header;
+  .get-in-touch-header-line {
+    @include block-header-line
+  }
+}
+
+.l-input-form {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+//.form-wrapper {
+//  @include clearfix;
+//  background-color: $get-in-touch-bg-color;
+//  height: 920px;
+//  .get-in-touch-header {
+//    h1 {
+//      color: white;
+//    }
+//    @include wrapper;
+//    @include block-header;
+//    @include block-header-line;
+//
+//  }
+//
+//  .contact-form {
+//
+//    @at-root #{&}__input-text {
+//      @at-root #{&}--main {
+//        border: 0;
+//        border-radius: 4px;
+//        background-color: #273a71;
+//        color: white;
+//        height: 56px;
+//        width: 47.7%;
+//        margin: 0 0 32px 0;
+//        padding: 0 20px;
+//        box-sizing: border-box;
+//      }
+//      @at-root #{&}--main::placeholder::after {
+//        content: '*';
+//        color: red;
+//      }
+//      @at-root #{&}--main-fr {
+//        float: right;
+//      }
+//      @at-root #{&}--main-fl {
+//        float: left;
+//      }
+//    }
+//    @at-root #{&}__textarea {
+//
+//      @at-root #{&}--main {
+//        display: block;
+//        border: 0;
+//        border-radius: 4px;
+//        background-color: #273a71;
+//        color: white;
+//        width: 100%;
+//        height: 200px;
+//        padding: 0 20px;
+//        margin-bottom: 50px;
+//        box-sizing: border-box;
+//      }
+//      @at-root #{&}--main::placeholder::after {
+//        content: '*';
+//        color: red;
+//      }
+//    }
+//    .l-input-form {
+//      max-width: 860px;
+//      margin: 0 auto;
+//      padding: 0 10px;
+//    }
+//    .btn-contact-form {
+//      @include button($btn-form-primary-color, $btn-form-secondary-color);
+//      margin: 0 auto;
+//      display: block;
+//    }
+//  }
+//}
 

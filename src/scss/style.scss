@@ -3,7 +3,7 @@
 //----------------------------------*/
 
 @import 'mixins/_position.scss';
-@import 'mixins/_template-mixins.scss';
+@import 'mixins/template-mixins.scss';
 
 //----------------------------------*\
 // CONFIG MODULES
@@ -17,12 +17,14 @@
 //----------------------------------*\
 // PARTIALS
 //----------------------------------*/
+
 @import 'partials/_welcome.scss';
+//@import 'partials/_header.scss';
 @import 'partials/_nav.scss';
 //@import 'partials/_sidebar.scss';
 //@import 'partials/_services.scss';
 //@import 'partials/_main.scss';
-@import 'partials/_contactform';
+@import 'partials/_contactform.scss';
 @import 'partials/_footer.scss';
 
 //----------------------------------*\
@@ -30,13 +32,14 @@
 //----------------------------------*/
 
 //@import 'modules/_buttons.scss';
-@import 'modules/_inputs.scss';
+//@import 'modules/_inputs.scss';
+//@import 'modules/_lists.scss';
 @import 'modules/_typography.scss';
-@import 'modules/_misc.scss';
-@import 'modules/_app.scss';
+//@import 'modules/_misc.scss';
+//@import 'modules/_app.scss';
 
 // Enhancement modules
-@import 'modules/_breakpoints.scss';
+//@import 'modules/_breakpoints.scss';
 @import 'modules/_print.scss';
 
 //----------------------------------*\
@@ -44,4 +47,3 @@
 //----------------------------------*/
 
 @import 'vendor/_external.scss';
-

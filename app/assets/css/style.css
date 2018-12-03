@@ -608,67 +608,16 @@ textarea {
   .section-nav li a.active {
     background-color: #ffffff; }
 
-.form-wrapper {
+.contact-form-main-wrapper {
   background-color: #3c5499;
-  height: 920px; }
-  .form-wrapper .contact-form {
+  min-height: 820px;
+  padding-top: 90px;
+  padding-bottom: 110px; }
+  .contact-form-main-wrapper .form-wrapper {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px; }
-    .form-wrapper .contact-form .get-in-touch-header {
-      text-align: center; }
-      .form-wrapper .contact-form .get-in-touch-header h1 {
-        font-family: "TitilliumWeb-Bold", sans-serif;
-        font-size: 40px;
-        text-transform: uppercase; }
-    .form-wrapper .contact-form .get-in-touch-header-line {
-      width: 87px;
-      height: 4px;
-      background-color: rgba(0, 0, 0, 0.149);
-      margin: auto;
-      margin-bottom: 25px; }
-    .form-wrapper .contact-form__input-text--main {
-      border: 0;
-      border-radius: 4px;
-      background-color: #273a71;
-      color: white;
-      height: 56px;
-      width: 47.7%;
-      margin: 0 0 32px 0;
-      padding: 0 20px;
-      box-sizing: border-box; }
-    .form-wrapper .contact-form__input-text--main:-ms-input-placeholder::after {
-      content: '*';
-      color: red; }
-    .form-wrapper .contact-form__input-text--main::placeholder::after {
-      content: '*';
-      color: red; }
-    .form-wrapper .contact-form__input-text--main-fr {
-      float: right; }
-    .form-wrapper .contact-form__input-text--main-fl {
-      float: left; }
-    .form-wrapper .contact-form__textarea--main {
-      display: block;
-      border: 0;
-      border-radius: 4px;
-      background-color: #273a71;
-      color: white;
-      width: 100%;
-      height: 200px;
-      padding: 0 20px;
-      margin-bottom: 50px;
-      box-sizing: border-box; }
-    .form-wrapper .contact-form__textarea--main:-ms-input-placeholder::after {
-      content: '*';
-      color: red; }
-    .form-wrapper .contact-form__textarea--main::placeholder::after {
-      content: '*';
-      color: red; }
-    .form-wrapper .contact-form .l-input-form {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 10px; }
-    .form-wrapper .contact-form .btn-contact-form {
+    .contact-form-main-wrapper .form-wrapper .btn-contact-form {
       display: inline-block;
       cursor: pointer;
       background-color: #30bae7;
@@ -684,10 +633,64 @@ textarea {
       color: #ffffff;
       margin: 0 auto;
       display: block; }
-      .form-wrapper .contact-form .btn-contact-form:active {
+      .contact-form-main-wrapper .form-wrapper .btn-contact-form:active {
         box-shadow: 0 2px #299ec5;
         -ms-transform: translateY(4px);
             transform: translateY(4px); }
+    .contact-form-main-wrapper .form-wrapper .contact-form-input-text {
+      border: 0;
+      border-radius: 4px;
+      background-color: #273a71;
+      color: white;
+      height: 56px;
+      width: 47.7%;
+      margin: 0 0 32px 0;
+      padding: 0 20px;
+      box-sizing: border-box; }
+    .contact-form-main-wrapper .form-wrapper .contact-form-textarea {
+      display: block;
+      border: 0;
+      border-radius: 4px;
+      background-color: #273a71;
+      color: white;
+      width: 100%;
+      height: 200px;
+      padding: 0 20px;
+      margin-bottom: 50px;
+      box-sizing: border-box; }
+    .contact-form-main-wrapper .form-wrapper .float-left {
+      float: left; }
+    .contact-form-main-wrapper .form-wrapper .float-right {
+      float: right; }
+
+.get-in-touch-title {
+  color: white;
+  padding-bottom: 70px;
+  text-align: center;
+  width: 100%; }
+  .get-in-touch-title h1 {
+    display: block;
+    font-family: "TitilliumWeb-Bold", sans-serif;
+    font-size: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center; }
+  .get-in-touch-title p {
+    font-family: "TitilliumWeb-Regular", sans-serif;
+    font-size: 18px; }
+  .get-in-touch-title .get-in-touch-header-line {
+    width: 87px;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.149);
+    margin: 0 auto;
+    margin-bottom: 25px; }
+
+.l-input-form {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 10px; }
 
 .footer {
   height: 112px;
@@ -745,82 +748,6 @@ textarea {
 @font-face {
   font-family: 'TitilliumWeb-Italic';
   src: url("../fonts/TitilliumWeb-Italic/TitilliumWeb-Italic.ttf") format("truetype"); }
-
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::-moz-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-::-webkit-selection {
-  background: #333;
-  color: #fff;
-  text-shadow: none; }
-
-@media only screen and (min-width: 320px) {
-  .section-content--services {
-    width: 100%; }
-  .section-content--team {
-    width: 100%; }
-  .section-content--skills {
-    width: 100%; }
-  .section-content--portfolio {
-    width: 100%; }
-  .section-content--about {
-    width: 100%; }
-  .section-content .l-container {
-    padding: 0 5px;
-    box-sizing: border-box; }
-  .contact-form__input-text--main {
-    width: 100%; } }
-
-@media only screen and (min-width: 520px) {
-  .section-content--skills {
-    width: 49%; }
-  .l-container {
-    max-width: 560px; } }
-
-@media only screen and (min-width: 1024px) {
-  .l-container {
-    max-width: 960px; }
-  .section-content--skills {
-    width: 24.7%; } }
-
-@media only screen and (min-width: 1140px) {
-  .section-content--services {
-    width: 24.7%; }
-  .section-content--team {
-    width: 24.7%; } }
-
-@media only screen and (min-width: 1280px) {
-  .l-container {
-    max-width: 1140px; } }
-
-@media only screen and (max-width: 870px) {
-  .footer {
-    height: auto; }
-  .nav-social {
-    top: 0px; }
-  .footer-nav {
-    float: none;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0; }
-    .footer-nav li {
-      display: block;
-      width: 100%; }
-      .footer-nav li a {
-        width: 150px;
-        margin: 0 auto; } }
 
 @media print {
   * {
