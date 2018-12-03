@@ -595,13 +595,12 @@ textarea {
     display: inline-block;
     color: #393939;
     text-align: center;
-    padding: 7px 0;
+    padding: 8px 0;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.078);
     width: 82px;
-    height: 38px;
     vertical-align: middle; }
   .section-nav li a:hover:not(.active) {
     background-color: #ffffff; }
@@ -1063,6 +1062,88 @@ svg {
 
 figure {
   margin: 1rem !important; }
+
+.portfolio-main-wrapper {
+  background-color: #ffdd99;
+  padding-top: 74px;
+  padding-bottom: 110px;
+  min-height: 745px; }
+  .portfolio-main-wrapper .portfolio-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px; }
+  .portfolio-main-wrapper .portfolio-title {
+    color: #393939;
+    padding-bottom: 82px;
+    text-align: center;
+    width: 100%; }
+    .portfolio-main-wrapper .portfolio-title p {
+      max-width: 580px;
+      margin: 0 auto; }
+    .portfolio-main-wrapper .portfolio-title h1 {
+      display: block;
+      font-family: "TitilliumWeb-Bold", sans-serif;
+      font-size: 40px;
+      letter-spacing: 4px;
+      margin-bottom: 6px;
+      padding-bottom: 0;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center; }
+    .portfolio-main-wrapper .portfolio-title p {
+      font-family: "TitilliumWeb-Regular", sans-serif;
+      font-size: 18px; }
+    .portfolio-main-wrapper .portfolio-title .portfolio-header-line {
+      width: 87px;
+      height: 4px;
+      background-color: rgba(0, 0, 0, 0.149);
+      margin: 0 auto;
+      margin-bottom: 15px; }
+
+.portfolio-content-wrapper {
+  width: 100%;
+  padding-bottom: 30px; }
+  .portfolio-content-wrapper::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .portfolio-content-wrapper .portfolio-content-item {
+    width: 50%;
+    float: left;
+    margin-bottom: 40px;
+    color: #393939;
+    text-align: center; }
+    .portfolio-content-wrapper .portfolio-content-item img {
+      max-width: 540px;
+      display: block;
+      margin: 0 auto; }
+    .portfolio-content-wrapper .portfolio-content-item h2 {
+      font-family: "TitilliumWeb-Bold", sans-serif;
+      text-transform: uppercase; }
+    .portfolio-content-wrapper .portfolio-content-item p {
+      font-family: "TitilliumWeb-Regular", sans-serif;
+      font-size: 18px;
+      text-transform: uppercase; }
+
+.btn-portfolio {
+  display: inline-block;
+  cursor: pointer;
+  background-color: #17c2a4;
+  box-shadow: 0px 5px #14a58c;
+  height: 70px;
+  width: 293px;
+  border-radius: 5px;
+  border: none;
+  margin: auto;
+  font-family: "TitilliumWeb-SemiBold", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block; }
+  .btn-portfolio:active {
+    box-shadow: 0 2px #14a58c;
+    -ms-transform: translateY(4px);
+        transform: translateY(4px); }
 
 .contact-form-main-wrapper {
   background-color: #3c5499;

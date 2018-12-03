@@ -1,0 +1,35 @@
+.portfolio-main-wrapper {
+  background-color: $portfolio-bg-color;
+  padding-top: 74px;
+  padding-bottom: 110px;
+  min-height: 745px;
+  .portfolio-wrapper {
+    @include wrapper;
+  }
+  .portfolio-title {
+    color: $text-portfolio-main-color;
+    padding-bottom: 82px;
+    p {
+      max-width: 580px;
+      margin: 0 auto;
+    }
+    @include block-header;
+    .portfolio-header-line {
+      @include block-header-line
+    }
+  }
+}
+.portfolio-content-wrapper {
+  width: 100%;
+  @include clearfix;
+  padding-bottom: 30px;
+  .portfolio-content-item {
+    @include portfolio-content-item;
+    color: $text-portfolio-main-color;
+    text-align: center;
+  }
+}
+.btn-portfolio {
+  @include button($btn-portfolio-primary-color, $btn-portfolio-secondary-color);
+  display: block;
+}
