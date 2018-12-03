@@ -50,11 +50,27 @@
 @mixin list {
   list-style: none;
 }
-@mixin clearfix() {
+@mixin clearfix {
   &::after {
     content: "";
     display: block;
     clear: both;
+  }
+}
+@mixin  section-content-item {
+  width: 25%;
+  float: left;
+  img {
+    max-height: 125px;
+    display: block;
+    margin: 0 auto;
+  }
+  h2 {
+    font-family: $font-bold;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: $font-regular;
   }
 }
 

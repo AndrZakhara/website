@@ -608,6 +608,61 @@ textarea {
   .section-nav li a.active {
     background-color: #ffffff; }
 
+.services-main-wrapper {
+  background-color: #17c2a4;
+  padding-top: 90px;
+  padding-bottom: 110px;
+  min-height: 747px; }
+  .services-main-wrapper .services-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px; }
+  .services-main-wrapper .services-title {
+    color: white;
+    padding-bottom: 70px;
+    text-align: center;
+    width: 100%; }
+    .services-main-wrapper .services-title h1 {
+      display: block;
+      font-family: "TitilliumWeb-Bold", sans-serif;
+      font-size: 40px;
+      margin-bottom: 20px;
+      padding-bottom: 0;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center; }
+    .services-main-wrapper .services-title p {
+      font-family: "TitilliumWeb-Regular", sans-serif;
+      font-size: 18px; }
+    .services-main-wrapper .services-title .services-header-line {
+      width: 87px;
+      height: 4px;
+      background-color: rgba(0, 0, 0, 0.149);
+      margin: 0 auto;
+      margin-bottom: 25px; }
+
+.content-wrapper {
+  width: 100%; }
+  .content-wrapper::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .content-wrapper .section-content-item {
+    width: 25%;
+    float: left;
+    padding: 0 5px;
+    color: #ffffff;
+    text-align: center; }
+    .content-wrapper .section-content-item img {
+      max-height: 125px;
+      display: block;
+      margin: 0 auto; }
+    .content-wrapper .section-content-item h2 {
+      font-family: "TitilliumWeb-Bold", sans-serif;
+      text-transform: uppercase; }
+    .content-wrapper .section-content-item p {
+      font-family: "TitilliumWeb-Regular", sans-serif; }
+
 .contact-form-main-wrapper {
   background-color: #3c5499;
   min-height: 820px;

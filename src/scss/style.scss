@@ -3,7 +3,7 @@
 //----------------------------------*/
 
 @import 'mixins/_position.scss';
-@import 'mixins/template-mixins.scss';
+@import 'mixins/_template-mixins.scss';
 
 //----------------------------------*\
 // CONFIG MODULES
@@ -22,7 +22,7 @@
 //@import 'partials/_header.scss';
 @import 'partials/_nav.scss';
 //@import 'partials/_sidebar.scss';
-//@import 'partials/_services.scss';
+@import 'partials/_services.scss';
 //@import 'partials/_main.scss';
 @import 'partials/_contactform.scss';
 @import 'partials/_footer.scss';
