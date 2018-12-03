@@ -691,6 +691,10 @@ textarea {
   max-width: 860px;
   margin: 0 auto;
   padding: 0 10px; }
+  .l-input-form::after {
+    content: "";
+    display: block;
+    clear: both; }
 
 .footer {
   height: 112px;
