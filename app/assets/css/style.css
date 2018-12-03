@@ -471,7 +471,8 @@ textarea {
 .navbar {
   position: relative;
   top: 58px;
-  font-size: 16px; }
+  font-size: 16px;
+  min-width: 280px; }
 
 .topnav {
   list-style-type: none;
@@ -606,6 +607,87 @@ textarea {
     background-color: #ffffff; }
   .section-nav li a.active {
     background-color: #ffffff; }
+
+.form-wrapper {
+  background-color: #3c5499;
+  height: 920px; }
+  .form-wrapper .contact-form {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px; }
+    .form-wrapper .contact-form .get-in-touch-header {
+      text-align: center; }
+      .form-wrapper .contact-form .get-in-touch-header h1 {
+        font-family: "TitilliumWeb-Bold", sans-serif;
+        font-size: 40px;
+        text-transform: uppercase; }
+    .form-wrapper .contact-form .get-in-touch-header-line {
+      width: 87px;
+      height: 4px;
+      background-color: rgba(0, 0, 0, 0.149);
+      margin: auto;
+      margin-bottom: 25px; }
+    .form-wrapper .contact-form__input-text--main {
+      border: 0;
+      border-radius: 4px;
+      background-color: #273a71;
+      color: white;
+      height: 56px;
+      width: 47.7%;
+      margin: 0 0 32px 0;
+      padding: 0 20px;
+      box-sizing: border-box; }
+    .form-wrapper .contact-form__input-text--main:-ms-input-placeholder::after {
+      content: '*';
+      color: red; }
+    .form-wrapper .contact-form__input-text--main::placeholder::after {
+      content: '*';
+      color: red; }
+    .form-wrapper .contact-form__input-text--main-fr {
+      float: right; }
+    .form-wrapper .contact-form__input-text--main-fl {
+      float: left; }
+    .form-wrapper .contact-form__textarea--main {
+      display: block;
+      border: 0;
+      border-radius: 4px;
+      background-color: #273a71;
+      color: white;
+      width: 100%;
+      height: 200px;
+      padding: 0 20px;
+      margin-bottom: 50px;
+      box-sizing: border-box; }
+    .form-wrapper .contact-form__textarea--main:-ms-input-placeholder::after {
+      content: '*';
+      color: red; }
+    .form-wrapper .contact-form__textarea--main::placeholder::after {
+      content: '*';
+      color: red; }
+    .form-wrapper .contact-form .l-input-form {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 10px; }
+    .form-wrapper .contact-form .btn-contact-form {
+      display: inline-block;
+      cursor: pointer;
+      background-color: #30bae7;
+      box-shadow: 0px 5px #299ec5;
+      height: 70px;
+      width: 293px;
+      border-radius: 5px;
+      border: none;
+      margin: auto;
+      font-family: "TitilliumWeb-SemiBold", sans-serif;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin: 0 auto;
+      display: block; }
+      .form-wrapper .contact-form .btn-contact-form:active {
+        box-shadow: 0 2px #299ec5;
+        -ms-transform: translateY(4px);
+            transform: translateY(4px); }
 
 .footer {
   height: 112px;
