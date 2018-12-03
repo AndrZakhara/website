@@ -94,4 +94,16 @@
     font-family: $font-regular;
   }
 }
+@mixin  skills-content-item {
+  width: 25%;
+  float: left;
+  h2 {
+    font-family: $font-bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p {
+    font-family: $font-regular;
+  }
+}
 

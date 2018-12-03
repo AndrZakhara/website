@@ -787,6 +787,283 @@ textarea {
       background-repeat: no-repeat;
       background-position: -129px 0; }
 
+.skills-main-wrapper {
+  background-color: #ffffff;
+  padding-top: 74px;
+  padding-bottom: 70px;
+  min-height: 745px; }
+  .skills-main-wrapper .skills-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px; }
+  .skills-main-wrapper .skills-title {
+    color: #3c4761;
+    padding-bottom: 82px;
+    text-align: center;
+    width: 100%; }
+    .skills-main-wrapper .skills-title p {
+      max-width: 580px;
+      margin: 0 auto; }
+    .skills-main-wrapper .skills-title h1 {
+      display: block;
+      font-family: "TitilliumWeb-Bold", sans-serif;
+      font-size: 40px;
+      letter-spacing: 4px;
+      margin-bottom: 6px;
+      padding-bottom: 0;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center; }
+    .skills-main-wrapper .skills-title p {
+      font-family: "TitilliumWeb-Regular", sans-serif;
+      font-size: 18px; }
+    .skills-main-wrapper .skills-title .skills-header-line {
+      width: 87px;
+      height: 4px;
+      background-color: rgba(0, 0, 0, 0.149);
+      margin: 0 auto;
+      margin-bottom: 15px; }
+
+.skills-content-wrapper {
+  width: 100%; }
+  .skills-content-wrapper::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .skills-content-wrapper .skills-content-item {
+    width: 25%;
+    float: left;
+    padding: 0 20px;
+    color: #3c4761;
+    text-align: center; }
+    .skills-content-wrapper .skills-content-item h2 {
+      font-family: "TitilliumWeb-Bold", sans-serif;
+      text-transform: uppercase;
+      text-align: center; }
+    .skills-content-wrapper .skills-content-item p {
+      font-family: "TitilliumWeb-Regular", sans-serif; }
+    .skills-content-wrapper .skills-content-item .wrapper-chart-skills {
+      width: 190px;
+      margin: 0 auto; }
+
+svg {
+  font-family: "TitilliumWeb-Regular", sans-serif; }
+
+.chart-wd {
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  position: relative; }
+  .chart-wd.animate svg .circle-foreground {
+    animation: offset 3s ease-in-out forwards;
+    animation-delay: 1s; }
+  .chart-wd.animate figcaption:after {
+    animation: chart-wd-label 3s steps(90) forwards;
+    animation-delay: 1s; }
+  .chart-wd svg {
+    width: 100%;
+    height: 100%; }
+    .chart-wd svg .circle-background, .chart-wd svg .circle-foreground {
+      r: 73.5px;
+      cx: 50%;
+      cy: 50%;
+      fill: none;
+      stroke: #dfe8ed;
+      stroke-width: 13px; }
+    .chart-wd svg .circle-foreground {
+      stroke: #30bae7;
+      stroke-dasharray: 415.422px 461.58px;
+      stroke-dashoffset: 415.422px;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+  .chart-wd figcaption {
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+    text-align: center;
+    color: #3c4761;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    left: 0;
+    font-size: 0; }
+    .chart-wd figcaption:after {
+      display: inline-block;
+      content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+      white-space: pre;
+      font-size: 3rem;
+      font-family: "TitilliumWeb-Light", sans-serif;
+      line-height: 3rem; }
+
+@keyframes chart-wd-label {
+  100% {
+    transform: translateY(-270rem); } }
+
+.chart-html {
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  position: relative; }
+  .chart-html.animate svg .circle-foreground {
+    animation: offset 3s ease-in-out forwards;
+    animation-delay: 1s; }
+  .chart-html.animate figcaption:after {
+    animation: chart-html-label 3s steps(75) forwards;
+    animation-delay: 1s; }
+  .chart-html svg {
+    width: 100%;
+    height: 100%; }
+    .chart-html svg .circle-background, .chart-html svg .circle-foreground {
+      r: 73.5px;
+      cx: 50%;
+      cy: 50%;
+      fill: none;
+      stroke: #dfe8ed;
+      stroke-width: 13px; }
+    .chart-html svg .circle-foreground {
+      stroke: #d74680;
+      stroke-dasharray: 346.185px 461.58px;
+      stroke-dashoffset: 346.185px;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+  .chart-html figcaption {
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+    text-align: center;
+    color: #3c4761;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    left: 0;
+    font-size: 0; }
+    .chart-html figcaption:after {
+      display: inline-block;
+      content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+      white-space: pre;
+      font-size: 3rem;
+      font-family: "TitilliumWeb-Light", sans-serif;
+      line-height: 3rem; }
+
+@keyframes chart-html-label {
+  100% {
+    transform: translateY(-225rem); } }
+
+.chart-gd {
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  position: relative; }
+  .chart-gd.animate svg .circle-foreground {
+    animation: offset 3s ease-in-out forwards;
+    animation-delay: 1s; }
+  .chart-gd.animate figcaption:after {
+    animation: chart-gd-label 3s steps(70) forwards;
+    animation-delay: 1s; }
+  .chart-gd svg {
+    width: 100%;
+    height: 100%; }
+    .chart-gd svg .circle-background, .chart-gd svg .circle-foreground {
+      r: 73.5px;
+      cx: 50%;
+      cy: 50%;
+      fill: none;
+      stroke: #dfe8ed;
+      stroke-width: 13px; }
+    .chart-gd svg .circle-foreground {
+      stroke: #15c7a8;
+      stroke-dasharray: 323.106px 461.58px;
+      stroke-dashoffset: 323.106px;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+  .chart-gd figcaption {
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+    text-align: center;
+    color: #3c4761;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    left: 0;
+    font-size: 0; }
+    .chart-gd figcaption:after {
+      display: inline-block;
+      content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+      white-space: pre;
+      font-size: 3rem;
+      font-family: "TitilliumWeb-Light", sans-serif;
+      line-height: 3rem; }
+
+@keyframes chart-gd-label {
+  100% {
+    transform: translateY(-210rem); } }
+
+.chart-ui {
+  width: 160px;
+  height: 160px;
+  margin: 0;
+  position: relative; }
+  .chart-ui.animate svg .circle-foreground {
+    animation: offset 3s ease-in-out forwards;
+    animation-delay: 1s; }
+  .chart-ui.animate figcaption:after {
+    animation: chart-ui-label 3s steps(85) forwards;
+    animation-delay: 1s; }
+  .chart-ui svg {
+    width: 100%;
+    height: 100%; }
+    .chart-ui svg .circle-background, .chart-ui svg .circle-foreground {
+      r: 73.5px;
+      cx: 50%;
+      cy: 50%;
+      fill: none;
+      stroke: #dfe8ed;
+      stroke-width: 13px; }
+    .chart-ui svg .circle-foreground {
+      stroke: #eb7d4b;
+      stroke-dasharray: 392.343px 461.58px;
+      stroke-dashoffset: 392.343px;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg); }
+  .chart-ui figcaption {
+    display: inline-block;
+    width: 100%;
+    height: 3rem;
+    overflow: hidden;
+    text-align: center;
+    color: #3c4761;
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    left: 0;
+    font-size: 0; }
+    .chart-ui figcaption:after {
+      display: inline-block;
+      content: "0%\a 1%\a 2%\a 3%\a 4%\a 5%\a 6%\a 7%\a 8%\a 9%\a 10%\a 11%\a 12%\a 13%\a 14%\a 15%\a 16%\a 17%\a 18%\a 19%\a 20%\a 21%\a 22%\a 23%\a 24%\a 25%\a 26%\a 27%\a 28%\a 29%\a 30%\a 31%\a 32%\a 33%\a 34%\a 35%\a 36%\a 37%\a 38%\a 39%\a 40%\a 41%\a 42%\a 43%\a 44%\a 45%\a 46%\a 47%\a 48%\a 49%\a 50%\a 51%\a 52%\a 53%\a 54%\a 55%\a 56%\a 57%\a 58%\a 59%\a 60%\a 61%\a 62%\a 63%\a 64%\a 65%\a 66%\a 67%\a 68%\a 69%\a 70%\a 71%\a 72%\a 73%\a 74%\a 75%\a 76%\a 77%\a 78%\a 79%\a 80%\a 81%\a 82%\a 83%\a 84%\a 85%\a 86%\a 87%\a 88%\a 89%\a 90%\a 91%\a 92%\a 93%\a 94%\a 95%\a 96%\a 97%\a 98%\a 99%\a 100%\a";
+      white-space: pre;
+      font-size: 3rem;
+      font-family: "TitilliumWeb-Light", sans-serif;
+      line-height: 3rem; }
+
+@keyframes chart-ui-label {
+  100% {
+    transform: translateY(-255rem); } }
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0; } }
+
+figure {
+  margin: 1rem !important; }
+
 .contact-form-main-wrapper {
   background-color: #3c5499;
   min-height: 820px;
