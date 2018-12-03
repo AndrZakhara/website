@@ -1,0 +1,97 @@
+.team-main-wrapper {
+  background-color: $team-bg-color;
+  padding-top: 74px;
+  padding-bottom: 70px;
+  min-height: 745px;
+  .team-wrapper {
+    @include wrapper;
+  }
+  .team-title {
+    color: $text-team-main-color;
+    padding-bottom: 82px;
+    p {
+      max-width: 580px;
+      margin: 0 auto;
+    }
+    @include block-header;
+    .team-header-line {
+      @include block-header-line
+    }
+  }
+}
+.content-wrapper {
+  width: 100%;
+  @include clearfix;
+  .team-content-item {
+    @include team-content-item;
+    p:last-of-type {
+      padding-bottom: 17px;
+    }
+    padding: 0 20px;
+    color: $text-team-main-color;
+    text-align: center;
+  }
+}
+.team-profession {
+  color: $text-team-subtitle-color;
+  padding: 0;
+  margin: 0;
+}
+.section-social-nav {
+  padding: 0;
+  @at-root #{&}-fb {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url('/assets/img/social_sprite.png');
+      background-repeat: no-repeat;
+    }
+  }
+  @at-root #{&}-tw {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url('/assets/img/social_sprite.png');
+      background-repeat: no-repeat;
+      background-position: -43px 0;
+    }
+  }
+  @at-root #{&}-in {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url('/assets/img/social_sprite.png');
+      background-repeat: no-repeat;
+      background-position: -86px 0;
+    }
+  }
+  @at-root #{&}-mail {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url('/assets/img/social_sprite.png');
+      background-repeat: no-repeat;
+      background-position: -129px 0;
+    }
+  }
+}

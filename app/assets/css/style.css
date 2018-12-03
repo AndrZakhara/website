@@ -645,28 +645,147 @@ textarea {
       margin: 0 auto;
       margin-bottom: 15px; }
 
+.services-content-wrapper {
+  width: 100%; }
+  .services-content-wrapper::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .services-content-wrapper .section-content-item {
+    width: 25%;
+    float: left;
+    padding: 0 20px;
+    color: #ffffff;
+    text-align: center; }
+    .services-content-wrapper .section-content-item img {
+      max-height: 125px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 50px; }
+    .services-content-wrapper .section-content-item h2 {
+      font-family: "TitilliumWeb-Bold", sans-serif;
+      text-transform: uppercase; }
+    .services-content-wrapper .section-content-item p {
+      font-family: "TitilliumWeb-Regular", sans-serif; }
+
+.team-main-wrapper {
+  background-color: #e7f1f8;
+  padding-top: 74px;
+  padding-bottom: 70px;
+  min-height: 745px; }
+  .team-main-wrapper .team-wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px; }
+  .team-main-wrapper .team-title {
+    color: #3c4761;
+    padding-bottom: 82px;
+    text-align: center;
+    width: 100%; }
+    .team-main-wrapper .team-title p {
+      max-width: 580px;
+      margin: 0 auto; }
+    .team-main-wrapper .team-title h1 {
+      display: block;
+      font-family: "TitilliumWeb-Bold", sans-serif;
+      font-size: 40px;
+      letter-spacing: 4px;
+      margin-bottom: 6px;
+      padding-bottom: 0;
+      text-transform: uppercase;
+      width: 100%;
+      text-align: center; }
+    .team-main-wrapper .team-title p {
+      font-family: "TitilliumWeb-Regular", sans-serif;
+      font-size: 18px; }
+    .team-main-wrapper .team-title .team-header-line {
+      width: 87px;
+      height: 4px;
+      background-color: rgba(0, 0, 0, 0.149);
+      margin: 0 auto;
+      margin-bottom: 15px; }
+
 .content-wrapper {
   width: 100%; }
   .content-wrapper::after {
     content: "";
     display: block;
     clear: both; }
-  .content-wrapper .section-content-item {
+  .content-wrapper .team-content-item {
     width: 25%;
     float: left;
     padding: 0 20px;
-    color: #ffffff;
+    color: #3c4761;
     text-align: center; }
-    .content-wrapper .section-content-item img {
-      max-height: 125px;
+    .content-wrapper .team-content-item img {
+      max-height: 200px;
       display: block;
       margin: 0 auto;
-      margin-bottom: 50px; }
-    .content-wrapper .section-content-item h2 {
+      margin-bottom: 34px; }
+    .content-wrapper .team-content-item h2 {
       font-family: "TitilliumWeb-Bold", sans-serif;
-      text-transform: uppercase; }
-    .content-wrapper .section-content-item p {
+      text-transform: uppercase;
+      padding-bottom: 0;
+      margin-bottom: 0; }
+    .content-wrapper .team-content-item p {
       font-family: "TitilliumWeb-Regular", sans-serif; }
+    .content-wrapper .team-content-item p:last-of-type {
+      padding-bottom: 17px; }
+
+.team-profession {
+  color: #30bae7;
+  padding: 0;
+  margin: 0; }
+
+.section-social-nav {
+  padding: 0; }
+  .section-social-nav-fb {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; }
+    .section-social-nav-fb a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url("/assets/img/social_sprite.png");
+      background-repeat: no-repeat; }
+  .section-social-nav-tw {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; }
+    .section-social-nav-tw a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url("/assets/img/social_sprite.png");
+      background-repeat: no-repeat;
+      background-position: -43px 0; }
+  .section-social-nav-in {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; }
+    .section-social-nav-in a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url("/assets/img/social_sprite.png");
+      background-repeat: no-repeat;
+      background-position: -86px 0; }
+  .section-social-nav-mail {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block; }
+    .section-social-nav-mail a {
+      width: 35px;
+      height: 35px;
+      display: block;
+      background-image: url("/assets/img/social_sprite.png");
+      background-repeat: no-repeat;
+      background-position: -129px 0; }
 
 .contact-form-main-wrapper {
   background-color: #3c5499;

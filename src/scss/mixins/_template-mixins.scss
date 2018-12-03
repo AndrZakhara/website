@@ -75,4 +75,23 @@
     font-family: $font-regular;
   }
 }
+@mixin  team-content-item {
+  width: 25%;
+  float: left;
+  img {
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
+  h2 {
+    font-family: $font-bold;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  p {
+    font-family: $font-regular;
+  }
+}
 
