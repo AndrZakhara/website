@@ -1,14 +1,19 @@
 .services-main-wrapper {
   background-color: $services-bg-color;
-  padding-top: 90px;
-  padding-bottom: 110px;
-  min-height: 747px;
+  padding-top: 74px;
+  padding-bottom: 70px;
+  min-height: 745px;
   .services-wrapper {
     @include wrapper;
   }
   .services-title {
     color: white;
-    padding-bottom: 70px;
+    padding-bottom: 82px;
+    p {
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
     @include block-header;
     .services-header-line {
       @include block-header-line

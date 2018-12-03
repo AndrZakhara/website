@@ -610,23 +610,27 @@ textarea {
 
 .services-main-wrapper {
   background-color: #17c2a4;
-  padding-top: 90px;
-  padding-bottom: 110px;
-  min-height: 747px; }
+  padding-top: 74px;
+  padding-bottom: 70px;
+  min-height: 745px; }
   .services-main-wrapper .services-wrapper {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 20px; }
   .services-main-wrapper .services-title {
     color: white;
-    padding-bottom: 70px;
+    padding-bottom: 82px;
     text-align: center;
     width: 100%; }
+    .services-main-wrapper .services-title p {
+      max-width: 580px;
+      margin: 0 auto; }
     .services-main-wrapper .services-title h1 {
       display: block;
       font-family: "TitilliumWeb-Bold", sans-serif;
       font-size: 40px;
-      margin-bottom: 20px;
+      letter-spacing: 4px;
+      margin-bottom: 6px;
       padding-bottom: 0;
       text-transform: uppercase;
       width: 100%;
@@ -639,7 +643,7 @@ textarea {
       height: 4px;
       background-color: rgba(0, 0, 0, 0.149);
       margin: 0 auto;
-      margin-bottom: 25px; }
+      margin-bottom: 15px; }
 
 .content-wrapper {
   width: 100%; }
@@ -656,7 +660,8 @@ textarea {
     .content-wrapper .section-content-item img {
       max-height: 125px;
       display: block;
-      margin: 0 auto; }
+      margin: 0 auto;
+      margin-bottom: 50px; }
     .content-wrapper .section-content-item h2 {
       font-family: "TitilliumWeb-Bold", sans-serif;
       text-transform: uppercase; }
@@ -727,7 +732,8 @@ textarea {
     display: block;
     font-family: "TitilliumWeb-Bold", sans-serif;
     font-size: 40px;
-    margin-bottom: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 6px;
     padding-bottom: 0;
     text-transform: uppercase;
     width: 100%;
@@ -740,7 +746,7 @@ textarea {
     height: 4px;
     background-color: rgba(0, 0, 0, 0.149);
     margin: 0 auto;
-    margin-bottom: 25px; }
+    margin-bottom: 15px; }
 
 .l-input-form {
   max-width: 860px;

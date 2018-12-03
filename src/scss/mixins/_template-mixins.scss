@@ -10,7 +10,8 @@
     display: block;
     font-family: $font-bold;
     font-size: 40px;
-    margin-bottom: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 6px;
     padding-bottom: 0;
     text-transform: uppercase;
     width: 100%;
@@ -26,7 +27,7 @@
   height: 4px;
   background-color: $line-color;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 @mixin button ($primary-color, $shadow-color) {
   display: inline-block;
@@ -64,6 +65,7 @@
     max-height: 125px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 50px;
   }
   h2 {
     font-family: $font-bold;
