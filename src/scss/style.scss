@@ -14,6 +14,7 @@
 @import 'modules/_clearfix.scss';
 @import 'modules/_defaults.scss';
 @import 'modules/_normalize.scss';
+@import 'modules/_typography.scss';
 //----------------------------------*\
 // PARTIALS
 //----------------------------------*/
@@ -21,24 +22,13 @@
 @import 'partials/_welcome.scss';
 //@import 'partials/_header.scss';
 @import 'partials/_nav.scss';
-//@import 'partials/_sidebar.scss';
 @import 'partials/_services.scss';
 @import 'partials/_team.scss';
 @import 'partials/_skills.scss';
 @import 'partials/_portfolio.scss';
+@import 'partials/_feedback.scss';
 @import 'partials/_contactform.scss';
 @import 'partials/_footer.scss';
-
-//----------------------------------*\
-// OBJECTS & MODULES
-//----------------------------------*/
-
-//@import 'modules/_buttons.scss';
-//@import 'modules/_inputs.scss';
-//@import 'modules/_lists.scss';
-@import 'modules/_typography.scss';
-//@import 'modules/_misc.scss';
-//@import 'modules/_app.scss';
 
 // Enhancement modules
 //@import 'modules/_breakpoints.scss';

@@ -79,7 +79,10 @@
   width: 25%;
   float: left;
   img {
+    height: auto;
+    width: 100%;
     max-height: 200px;
+    max-width: 200px;
     display: block;
     margin: 0 auto;
     margin-bottom: 34px;
@@ -111,8 +114,11 @@
   float: left;
   margin-bottom: 40px;
   img {
+    height: auto;
+    width: 100%;
     max-width: 540px;
     display: block;
+    padding: 0 2px;
     margin: 0 auto;
   }
   h2 {
@@ -123,6 +129,40 @@
     font-family: $font-regular;
     font-size: 18px;
     text-transform: uppercase;
+  }
+}
+@mixin  feedback-content-item {
+  @include clearfix;
+  width: 50%;
+  float: left;
+  margin-bottom: 40px;
+  img {
+    height: 96px;
+    width: 96px;
+    display: inline-block;
+    margin: 0 auto;
+    float: left;
+  }
+  div {
+    //float: right;
+    padding-left: 130px;
+    padding-right: 10px;
+  }
+  h3 {
+    font-family: $font-bold;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    margin-bottom: -5px;
+  }
+  p {
+    font-family: $font-regular;
+    display: block;
+    margin-top: 0;
+  }
+  p:last-of-type {
+    color: $text-feedback-subtitle-color;
+    margin: 0;
+    padding: 0;
   }
 }
 

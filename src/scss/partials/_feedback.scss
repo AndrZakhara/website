@@ -1,0 +1,32 @@
+.feedback-main-wrapper {
+  background-color: $feedback-bg-color;
+  padding-top: 74px;
+  padding-bottom: 110px;
+  min-height: 745px;
+  .feedback-wrapper {
+    @include wrapper;
+  }
+  .feedback-title {
+    color: white;
+    padding-bottom: 82px;
+    p {
+      max-width: 580px;
+      margin: 0 auto;
+    }
+    @include block-header;
+    .feedback-header-line {
+      @include block-header-line
+    }
+  }
+}
+.feedback-content-wrapper {
+  color: white;
+  width: 100%;
+  @include clearfix;
+  padding-bottom: 30px;
+  .feedback-content-item {
+    @include feedback-content-item;
+    //text-align: center;
+  }
+}
+
