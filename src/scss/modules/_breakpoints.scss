@@ -1,234 +1,98 @@
 @media only screen and (min-width:320px) {
-  .section-content {
-    &--services {
-      width: 100%;
-    }
-    &--team {
-      width: 100%;
-    }
-    &--skills {
-      width: 100%;
-    }
-    &--portfolio {
-      width: 100%;
-    }
-    &--about{
-       width: 100%;
-    }
-    .l-container{
-      padding: 0 5px;
-      box-sizing: border-box;
-    }
-  }
-  .contact-form__input-text--main {
+  .section-content-item {
     width: 100%;
   }
-}
-@media only screen and (min-width:520px) {
-  .section-content {
-    &--skills {
-      width: 49%;
-    }
+  .team-content-item {
+    width: 100%;
   }
-  .l-container {
-    max-width: 560px;
+  .skills-content-item {
+    width: 100%;
   }
-}
-//@media only screen and (min-width:768px) {
-//  .section-content {
-//    &--services {
-//      width: 49%;
-//    }
-//    &--team {
-//      width: 49%;
-//    }
-//    &--skills {
-//      width: 49%;
-//    }
-//    &--portfolio {
-//      width: 49%;
-//    }
-//    &--about{
-//      width: 49.8%;
-//    }
-//  }
-//  .contact-form__input-text--main {
-//    width: 47.7%;
-//  }
-//  .l-container {
-//    max-width: 760px;
-//  }
-//
-//  .navbar-checkbox {
-//    display: none;
-//  }
-//  .navbar {
-//    position: relative;
-//    top: 65px;
-//    font-size: 16px;
-//  }
-//  .topnav {
-//    list-style-type: none;
-//    margin: 0;
-//    padding: 0;
-//    overflow: hidden;
-//    float: right;
-//    li {
-//      float: left;
-//      a {
-//        font-weight: $font-regular;
-//        font-size: 16px;
-//        display: block;
-//        color: #fff;
-//        text-align: center;
-//        padding: 2px 16px;
-//        text-decoration: none;
-//        text-transform: uppercase;
-//        border-radius: 3px;
-//      }
-//      a:hover:not(.active) {
-//        background-color: #663366;
-//      }
-//      a.active {
-//        background-color: #663366;
-//      }
-//    }
-//  }
-//}
-@media only screen and (min-width:1024px) {
-  .l-container {
-    max-width: 960px;
+  body {
+    font-size: 0.8rem;
   }
-  .section-content {
-    &--skills {
-      width: 24.7%;
-    }
+  .portfolio-content-item {
+    width: 100%;
   }
-}
-@media only screen and (min-width:1140px) {
-  .section-content {
-    &--services {
-      width: 24.7%;
-    }
-    &--team {
-      width: 24.7%;
-    }
+  .feedback-content-item {
+    width: 100%;
   }
-}
-@media only screen and (min-width:1280px) {
-  .l-container {
-    max-width: 1140px;
+  .contact-form-input-text {
+    width: 100%;
+    margin: 0 0 15px 0;
   }
-}
-//@media only screen and (max-width:768px) {
-//  .navbar  {
-//    a
-//    {
-//      text-decoration: none;
-//      color: #ffffff;
-//      transition: color 0.3s ease;
-//    }
-//    a:hover
-//    {
-//      color: #bbbb;
-//    }
-//    display: block;
-//    position: relative;
-//    top: 50px;
-//    left: 50px;
-//    z-index: 1;
-//    -webkit-user-select: none;
-//    user-select: none;
-//  }
-//  .navbar input  {
-//    margin-left: 80%;
-//    display: block;
-//    width: 40px;
-//    height: 32px;
-//    position: absolute;
-//    top: 14px;
-//    left: -5px;
-//    cursor: pointer;
-//    opacity: 0;
-//    z-index: 2;
-//    -webkit-touch-callout: none;
-//  }
-//  .navbar span  {
-//    margin-left: 80%;
-//    top: 20px;
-//    display: block;
-//    width: 33px;
-//    height: 4px;
-//    margin-bottom: 5px;
-//    position: relative;
-//    background: #ffffff;
-//    border-radius: 3px;
-//    z-index: 1;
-//    transform-origin: 4px 0px;
-//    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-//    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-//    opacity 0.55s ease;
-//  }
-//  .navbar span:first-child  {
-//    transform-origin: 0% 0%;
-//  }
-//  .navbar span:nth-last-child(2) {
-//    transform-origin: 0% 100%;
-//  }
-//  .navbar input:checked ~ span  {
-//    opacity: 1;
-//    transform: rotate(45deg) translate(-2px, -1px);
-//    background: #ffffff;
-//  }
-//  .navbar input:checked ~ span:nth-last-child(3) {
-//    opacity: 0;
-//    transform: rotate(0deg) scale(0.2, 0.2);
-//  }
-//  .navbar input:checked ~ span:nth-last-child(2) {
-//    transform: rotate(-45deg) translate(0, -1px);
-//  }
-//  .topnav {
-//    position: absolute;
-//    width: 300px;
-//    margin: -100px 0 0 -50px;
-//    padding: 50px;
-//    padding-top: 125px;
-//    background: #572a57;
-//    list-style-type: none;
-//    -webkit-font-smoothing: antialiased;
-//    transform-origin: 0% 0%;
-//    transform: translate(-100%, 0);
-//    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-//  }
-//  .topnav li {
-//    padding: 10px 0;
-//    font-size: 22px;
-//  }
-//  .navbar input:checked ~ ul {
-//    transform: none;
-//  }
-//}
-@media only screen and (max-width:870px) {
   .footer {
-    height: auto;
+    min-height: 212px;
+    text-align: center;
   }
-  .nav-social {
-    top: 0px;
+  .welcome-title {
+    padding: 0 10px;
   }
-  .footer-nav {
-    float: none;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    li {
-      display: block;
-      width: 100%;
-      a {
-        width: 150px;
-        margin: 0 auto;
-      }
-    }
+  .btn-size {
+    height: 50px;
+    width: 190px;
   }
 }
 
+@media only screen and (min-width:520px) {
+  body {
+    font-size: 0.95rem;
+  }
+  .section-content-item {
+    width: 50%;
+  }
+  .team-content-item {
+    width: 50%;
+  }
+  .skills-content-item {
+    width: 50%;
+  }
+  .portfolio-content-item {
+     width: 50%;
+   }
+  .footer {
+    min-height: 172px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width:610px) {
+  .footer {
+    min-height: 152px;
+    text-align: center;
+  }
 
+}
+@media only screen and (min-width:680px) {
+  .feedback-content-item {
+    width: 50%;
+  }
+  .btn-size {
+    height: 70px;
+    width: 293px;
+  }
+}
+@media only screen and (min-width:960px) {
+  body {
+    font-size: 1rem;
+  }
+  .section-content-item {
+    width: 25%;
+  }
+  .team-content-item {
+    width: 25%;
+  }
+  .skills-content-item {
+    width: 25%;
+  }
+  .contact-form-input-text {
+    width: 47.7%;
+    margin: 0 0 32px 0;
+  }
+  .footer {
+    min-height: 112px;
+    text-align: center;
+  }
+  .welcome-title {
+    font-size: 21px;
+  }
+}

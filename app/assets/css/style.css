@@ -460,7 +460,6 @@ textarea {
   width: 100%;
   max-width: 924px;
   font-family: "TitilliumWeb-Bold", sans-serif;
-  font-size: 21px;
   text-align: center;
   color: #f7f3ea;
   position: absolute;
@@ -476,8 +475,6 @@ textarea {
     cursor: pointer;
     background-color: #eb7d4b;
     box-shadow: 0px 5px #c86a40;
-    height: 70px;
-    width: 293px;
     border-radius: 5px;
     border: none;
     margin: auto;
@@ -676,7 +673,6 @@ textarea {
     display: block;
     clear: both; }
   .services-content-wrapper .section-content-item {
-    width: 25%;
     float: left;
     padding: 0 20px;
     color: #ffffff;
@@ -736,7 +732,6 @@ textarea {
     display: block;
     clear: both; }
   .content-wrapper .team-content-item {
-    width: 25%;
     float: left;
     padding: 0 20px;
     color: #3c4761;
@@ -814,6 +809,10 @@ textarea {
       background-repeat: no-repeat;
       background-position: -129px 0; }
 
+@media (min-width: 960px) {
+  .team-content-item {
+    width: 25%; } }
+
 .skills-main-wrapper {
   background-color: #ffffff;
   padding-top: 74px;
@@ -858,7 +857,6 @@ textarea {
     display: block;
     clear: both; }
   .skills-content-wrapper .skills-content-item {
-    width: 25%;
     float: left;
     padding: 0 20px;
     color: #3c4761;
@@ -1136,7 +1134,6 @@ figure {
     display: block;
     clear: both; }
   .portfolio-content-wrapper .portfolio-content-item {
-    width: 50%;
     float: left;
     margin-bottom: 40px;
     color: #393939;
@@ -1161,8 +1158,6 @@ figure {
   cursor: pointer;
   background-color: #17c2a4;
   box-shadow: 0px 5px #14a58c;
-  height: 70px;
-  width: 293px;
   border-radius: 5px;
   border: none;
   margin: auto;
@@ -1222,7 +1217,6 @@ figure {
     display: block;
     clear: both; }
   .feedback-content-wrapper .feedback-content-item {
-    width: 50%;
     float: left;
     margin-bottom: 40px; }
     .feedback-content-wrapper .feedback-content-item::after {
@@ -1266,8 +1260,6 @@ figure {
       cursor: pointer;
       background-color: #30bae7;
       box-shadow: 0px 5px #299ec5;
-      height: 70px;
-      width: 293px;
       border-radius: 5px;
       border: none;
       margin: auto;
@@ -1287,8 +1279,6 @@ figure {
       background-color: #273a71;
       color: white;
       height: 56px;
-      width: 47.7%;
-      margin: 0 0 32px 0;
       padding: 0 20px;
       box-sizing: border-box; }
     .contact-form-main-wrapper .form-wrapper .contact-form-textarea {
@@ -1342,8 +1332,11 @@ figure {
     clear: both; }
 
 .footer {
-  height: 112px;
   background-color: #344b8e; }
+  .footer::after {
+    content: "";
+    display: block;
+    clear: both; }
 
 .nav-social {
   margin: 0 auto;
@@ -1358,9 +1351,14 @@ figure {
   overflow: hidden;
   float: left;
   width: 100%; }
+  .footer-nav::after {
+    content: "";
+    display: block;
+    clear: both; }
   .footer-nav li {
     display: inline-block;
-    width: 13.9%; }
+    width: 13.9%;
+    min-width: 130px; }
     .footer-nav li a {
       font-family: "TitilliumWeb-SemiBold", sans-serif;
       font-size: 20px;
@@ -1372,6 +1370,76 @@ figure {
       border-radius: 3px; }
     .footer-nav li a.active {
       color: #30bae7; }
+
+@media only screen and (min-width: 320px) {
+  .section-content-item {
+    width: 100%; }
+  .team-content-item {
+    width: 100%; }
+  .skills-content-item {
+    width: 100%; }
+  body {
+    font-size: 0.8rem; }
+  .portfolio-content-item {
+    width: 100%; }
+  .feedback-content-item {
+    width: 100%; }
+  .contact-form-input-text {
+    width: 100%;
+    margin: 0 0 15px 0; }
+  .footer {
+    min-height: 212px;
+    text-align: center; }
+  .welcome-title {
+    padding: 0 10px; }
+  .btn-size {
+    height: 50px;
+    width: 190px; } }
+
+@media only screen and (min-width: 520px) {
+  body {
+    font-size: 0.95rem; }
+  .section-content-item {
+    width: 50%; }
+  .team-content-item {
+    width: 50%; }
+  .skills-content-item {
+    width: 50%; }
+  .portfolio-content-item {
+    width: 50%; }
+  .footer {
+    min-height: 172px;
+    text-align: center; } }
+
+@media only screen and (min-width: 610px) {
+  .footer {
+    min-height: 152px;
+    text-align: center; } }
+
+@media only screen and (min-width: 680px) {
+  .feedback-content-item {
+    width: 50%; }
+  .btn-size {
+    height: 70px;
+    width: 293px; } }
+
+@media only screen and (min-width: 960px) {
+  body {
+    font-size: 1rem; }
+  .section-content-item {
+    width: 25%; }
+  .team-content-item {
+    width: 25%; }
+  .skills-content-item {
+    width: 25%; }
+  .contact-form-input-text {
+    width: 47.7%;
+    margin: 0 0 32px 0; }
+  .footer {
+    min-height: 112px;
+    text-align: center; }
+  .welcome-title {
+    font-size: 21px; } }
 
 @media print {
   * {

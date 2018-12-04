@@ -1,6 +1,7 @@
 .footer {
-  height: 112px;
+  //min-height: 112px;
   background-color: $footer-bg-color;
+  @include clearfix;
 }
 .nav-social {
   margin: 0 auto;
@@ -9,6 +10,7 @@
   max-width: 1280px;
 }
 .footer-nav {
+  @include clearfix;
   list-style-type: none;
   margin: 0;
   padding: 0 4%;
@@ -18,6 +20,7 @@
   li {
     display: inline-block;
     width: 13.9%;
+    min-width: 130px;
     a {
       font-family: "TitilliumWeb-SemiBold", sans-serif;
       font-size: 20px;

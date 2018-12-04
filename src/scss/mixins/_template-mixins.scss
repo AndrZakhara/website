@@ -34,8 +34,8 @@
   cursor: pointer;
   background-color: $primary-color;
   box-shadow: 0px 5px $shadow-color;
-  height: 70px;
-  width: 293px;
+  //height: 70px;
+  //width: 293px;
   border-radius: 5px;
   border: none;
   margin: auto;
@@ -59,7 +59,7 @@
   }
 }
 @mixin  section-content-item {
-  width: 25%;
+  //width: 25%;
   float: left;
   img {
     max-height: 125px;
@@ -76,7 +76,6 @@
   }
 }
 @mixin  team-content-item {
-  width: 25%;
   float: left;
   img {
     height: auto;
@@ -98,7 +97,6 @@
   }
 }
 @mixin  skills-content-item {
-  width: 25%;
   float: left;
   h2 {
     font-family: $font-bold;
@@ -110,7 +108,6 @@
   }
 }
 @mixin  portfolio-content-item {
-  width: 50%;
   float: left;
   margin-bottom: 40px;
   img {
@@ -133,7 +130,6 @@
 }
 @mixin  feedback-content-item {
   @include clearfix;
-  width: 50%;
   float: left;
   margin-bottom: 40px;
   img {
@@ -144,7 +140,6 @@
     float: left;
   }
   div {
-    //float: right;
     padding-left: 130px;
     padding-right: 10px;
   }
