@@ -1,43 +1,4 @@
-//
-//.navbar-checkbox {
-//  display: none;
-//}
-//
-//.navbar {
-//  position: relative;
-//  top: 58px;
-//  font-size: 16px;
-//  min-width: 280px;
-//}
-//
-//.topnav {
-//  list-style-type: none;
-//  margin: 0;
-//  padding: 0;
-//  overflow: hidden;
-//  float: right;
-//  li {
-//    float: left;
-//    margin: 0 2px;
-//    a {
-//      font-weight: $font-regular;
-//      display: block;
-//      color: $text-main-nav-color;
-//      text-align: center;
-//      vertical-align: middle;
-//      padding: 8px 17px;
-//      text-decoration: none;
-//      text-transform: uppercase;
-//      border-radius: 5px;
-//    }
-//    a:hover:not(.active) {
-//      background-color: $main-nav-bg-active-color;
-//    }
-//    a.active {
-//      background-color: $main-nav-bg-active-color;
-//    }
-//  }
-//}
+
 
 @media only screen and (max-width: 860px) {
   .navbar {
@@ -49,8 +10,7 @@
     a:hover {
       color: #bbbb;
     }
-    //display: block;
-    //position: relative;
+
     top: 50px;
     left: 50px;
     z-index: 1000;
@@ -63,7 +23,7 @@
     width: 40px;
     height: 32px;
     position: absolute;
-    top: 14px;
+    top: 60px;
     left: -5px;
     cursor: pointer;
     opacity: 0;
@@ -72,7 +32,7 @@
   }
   .navbar span {
     margin-left: 81%;
-    top: 20px;
+    top: 70px;
     display: block;
     width: 33px;
     height: 4px;
