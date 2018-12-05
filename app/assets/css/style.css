@@ -508,7 +508,7 @@ textarea {
     width: 40px;
     height: 32px;
     position: absolute;
-    top: 14px;
+    top: 60px;
     left: -5px;
     cursor: pointer;
     opacity: 0;
@@ -516,7 +516,7 @@ textarea {
     -webkit-touch-callout: none; }
   .navbar span {
     margin-left: 81%;
-    top: 20px;
+    top: 70px;
     display: block;
     width: 33px;
     height: 4px;
