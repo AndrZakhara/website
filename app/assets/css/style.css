@@ -1358,7 +1358,8 @@ figure {
     clear: both; }
 
 .footer {
-  background-color: #344b8e; }
+  background-color: #344b8e;
+  padding: 41px 0; }
   .footer::after {
     content: "";
     display: block;
@@ -1366,8 +1367,6 @@ figure {
 
 .nav-social {
   margin: 0 auto;
-  position: relative;
-  top: 35px;
   max-width: 1280px; }
 
 .footer-nav {
@@ -1382,12 +1381,9 @@ figure {
     display: block;
     clear: both; }
   .footer-nav li {
-    display: inline-block;
-    width: 13.9%;
-    min-width: 130px; }
+    display: inline-block; }
     .footer-nav li a {
       font-family: "TitilliumWeb-SemiBold", sans-serif;
-      font-size: 20px;
       display: block;
       color: #fff;
       text-align: center;
@@ -1418,8 +1414,8 @@ figure {
     width: 100%;
     margin: 0 0 15px 0; }
   .footer {
-    min-height: 212px;
-    text-align: center; }
+    text-align: center;
+    font-size: 14px; }
   .welcome-title {
     padding: 0 10px; }
   .btn-size {
@@ -1444,12 +1440,10 @@ figure {
     .skills-content-item p {
       padding: 0; }
   .footer {
-    min-height: 172px;
     text-align: center; } }
 
 @media only screen and (min-width: 610px) {
   .footer {
-    min-height: 152px;
     text-align: center; }
   .services-wrapper {
     padding: 20px; }
@@ -1478,7 +1472,11 @@ figure {
   .skills-content-item p {
     padding: 0 50px; }
   .portfolio-content-item {
-    width: 50%; } }
+    width: 50%; }
+  .footer {
+    font-size: 14px; }
+    .footer li {
+      min-width: 80px; } }
 
 @media only screen and (min-width: 960px) {
   body {
@@ -1497,8 +1495,10 @@ figure {
     width: 47.7%;
     margin: 0 0 32px 0; }
   .footer {
-    min-height: 112px;
-    text-align: center; }
+    text-align: center;
+    font-size: 20px; }
+    .footer li {
+      min-width: 120px; }
   .welcome-title {
     font-size: 21px; }
   .feedback-content-item {
