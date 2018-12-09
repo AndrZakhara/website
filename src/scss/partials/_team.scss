@@ -1,14 +1,11 @@
 .team-main-wrapper {
   background-color: $team-bg-color;
-  padding-top: 74px;
-  padding-bottom: 70px;
-  min-height: 745px;
   .team-wrapper {
     @include wrapper;
   }
   .team-title {
     color: $text-team-main-color;
-    padding-bottom: 82px;
+    margin-bottom: 82px;
     p {
       max-width: 580px;
       margin: 0 auto;
@@ -22,7 +19,8 @@
   .team-content-item {
     @include team-content-item;
     p:last-of-type {
-      padding-bottom: 17px;
+      margin-bottom: 30px;
+
     }
     padding: 0 20px;
     color: $text-team-main-color;
@@ -32,10 +30,11 @@
 .team-profession {
   color: $text-team-subtitle-color;
   padding: 0;
-  margin: 0;
+  margin: 0 0 18px 0;
 }
 .section-social-nav {
   padding: 0;
+  margin-bottom: 20px;
   @at-root #{&}-fb {
     list-style-type: none;
     margin: 0;
@@ -100,8 +99,3 @@
   }
 }
 
-//@media (min-width:960px) {
-//  .team-content-item {
-//    width: 25%;
-//  }
-//}

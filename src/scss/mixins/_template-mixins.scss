@@ -90,14 +90,17 @@
 }
 @mixin  team-content-item {
   float: left;
-  img {
-    height: auto;
-    width: 100%;
-    max-height: 200px;
-    max-width: 200px;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 34px;
+  .team-img {
+    margin-bottom: 27px;
+    img {
+      height: auto;
+      width: 100%;
+      max-height: 200px;
+      max-width: 200px;
+      display: block;
+      margin: 0 auto;
+      //margin-bottom: 34px;
+    }
   }
   h2 {
     font-family: $font-bold;

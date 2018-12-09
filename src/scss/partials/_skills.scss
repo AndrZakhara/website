@@ -1,14 +1,11 @@
 .skills-main-wrapper {
   background-color: #ffffff;
-  padding-top: 74px;
-  padding-bottom: 70px;
-  min-height: 745px;
   .skills-wrapper {
     @include wrapper;
   }
   .skills-title {
     color: $text-skills-main-color;
-    padding-bottom: 82px;
+    margin-bottom: 82px;
     p {
       max-width: 580px;
       margin: 0 auto;
@@ -141,6 +138,8 @@ $labelData: '';
       left: 0;
       font-size: 0;
       &:after {
+        //position: absolute;
+        height: map-get($param, labelFontSize);
         display: inline-block;
         content: $labelData;
         white-space: pre;
