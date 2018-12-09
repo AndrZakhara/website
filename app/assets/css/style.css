@@ -441,24 +441,23 @@ textarea {
 .header {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 20px;
-  height: 92px; }
+  padding: 0 20px; }
 
-.logo {
+.header:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+.header-logo {
   float: left;
-  position: relative;
-  top: 55px;
+  padding: 56px 0 0 0;
   margin-left: 42px; }
-  .logo img {
+  .header-logo img {
     width: 118px;
     height: 36px; }
 
 .welcome-title {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
   width: 100%;
-  max-width: 924px;
   font-family: "TitilliumWeb-Bold", sans-serif;
   text-align: center;
   color: #f7f3ea;
@@ -466,12 +465,19 @@ textarea {
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+      transform: translate(-50%, -50%);
+  padding-bottom: 50px; }
+  .welcome-title::after {
+    content: "";
+    display: block;
+    clear: both; }
   .welcome-title h1 {
     line-height: 1.1;
-    margin-bottom: 60px; }
+    margin: 0;
+    padding: 30px 0;
+    margin-bottom: 30px; }
   .welcome-title .btn-welcome {
-    display: inline-block;
+    text-align: center;
     cursor: pointer;
     background-color: #eb7d4b;
     box-shadow: 0px 5px #c86a40;
@@ -481,11 +487,40 @@ textarea {
     font-family: "TitilliumWeb-SemiBold", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
-    color: #ffffff; }
+    color: #ffffff;
+    margin-bottom: 2px; }
     .welcome-title .btn-welcome:active {
       box-shadow: 0 2px #c86a40;
       -ms-transform: translateY(4px);
           transform: translateY(4px); }
+
+.section-nav ul {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 30px;
+  overflow: hidden;
+  width: 380px;
+  margin: 0 auto; }
+
+.section-nav li {
+  float: left;
+  margin: 0 5px; }
+  .section-nav li a {
+    display: inline-block;
+    color: #393939;
+    text-align: center;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.078);
+    width: 82px;
+    height: 38px;
+    vertical-align: middle; }
+  .section-nav li a:hover:not(.active) {
+    background-color: #ffffff; }
+  .section-nav li a.active {
+    background-color: #ffffff; }
 
 @media only screen and (max-width: 860px) {
   .navbar {
@@ -567,42 +602,17 @@ textarea {
     -ms-transform: none;
         transform: none; } }
 
-.section-nav ul {
-  list-style-type: none;
-  padding: 0;
-  padding-top: 30px;
-  overflow: hidden;
-  width: 380px;
-  margin: 0 auto; }
-
-.section-nav li {
-  float: left;
-  margin: 0 5px; }
-  .section-nav li a {
-    display: inline-block;
-    color: #393939;
-    text-align: center;
-    padding: 8px 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.078);
-    width: 82px;
-    height: 38px;
-    vertical-align: middle; }
-  .section-nav li a:hover:not(.active) {
-    background-color: #ffffff; }
-  .section-nav li a.active {
-    background-color: #ffffff; }
-
 @media only screen and (min-width: 860px) {
   .navbar-checkbox {
     display: none; }
   .navbar {
-    position: relative;
-    top: 58px;
+    padding: 59px 0;
     font-size: 16px;
     min-width: 280px; }
+  .navbar:after {
+    content: "";
+    display: block;
+    clear: both; }
   .topnav {
     list-style-type: none;
     margin: 0;
@@ -1152,7 +1162,7 @@ figure {
       text-transform: uppercase; }
 
 .btn-portfolio {
-  display: inline-block;
+  text-align: center;
   cursor: pointer;
   background-color: #17c2a4;
   box-shadow: 0px 5px #14a58c;
@@ -1254,7 +1264,7 @@ figure {
     margin: 0 auto;
     padding: 0 20px; }
     .contact-form-main-wrapper .form-wrapper .btn-contact-form {
-      display: inline-block;
+      text-align: center;
       cursor: pointer;
       background-color: #30bae7;
       box-shadow: 0px 5px #299ec5;

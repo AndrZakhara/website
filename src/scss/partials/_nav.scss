@@ -1,4 +1,39 @@
 
+.section-nav {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 30px;
+    overflow: hidden;
+    width: 380px;
+    margin: 0 auto;
+  }
+  li {
+    float: left;
+    margin: 0 5px;
+    a {
+      display: inline-block;
+      color: #393939;
+      text-align: center;
+      padding: 8px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, 0.078);
+      width: 82px;
+      height: 38px;
+      vertical-align: middle;
+    }
+    a:hover:not(.active) {
+      background-color: #ffffff;
+    }
+    a.active {
+      background-color: #ffffff;
+    }
+  }
+}
+
+//--- media ---
 
 @media only screen and (max-width: 860px) {
   .navbar {
@@ -85,40 +120,6 @@
   }
 }
 
-.section-nav {
-  ul {
-    list-style-type: none;
-    padding: 0;
-    padding-top: 30px;
-    overflow: hidden;
-    width: 380px;
-    margin: 0 auto;
-  }
-  li {
-    float: left;
-    margin: 0 5px;
-    a {
-      display: inline-block;
-      color: #393939;
-      text-align: center;
-      padding: 8px 0;
-      text-decoration: none;
-      text-transform: uppercase;
-      border-radius: 4px;
-      background-color: rgba(0, 0, 0, 0.078);
-      width: 82px;
-      height: 38px;
-      vertical-align: middle;
-    }
-    a:hover:not(.active) {
-      background-color: #ffffff;
-    }
-    a.active {
-      background-color: #ffffff;
-    }
-  }
-}
-
 @media only screen and (min-width: 860px) {
 
   .navbar-checkbox {
@@ -126,10 +127,14 @@
   }
 
   .navbar {
-    position: relative;
-    top: 58px;
+    padding: 59px 0;
     font-size: 16px;
     min-width: 280px;
+  }
+  .navbar:after {
+    content: "";
+    display: block;
+    clear: both;
   }
 
   .topnav {

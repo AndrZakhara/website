@@ -7,12 +7,18 @@
 }
 .header {
   @include wrapper;
-  height: 92px;
+  //height: 92px;
 }
-.logo {
+.header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header-logo {
   float: left;
-  position: relative;
-  top: 55px;
+  padding: 56px 0 0 0;
+  //position: relative;
+  //top: 55px;
   margin-left: 42px;
   img {
     width: 118px;
@@ -20,9 +26,8 @@
   }
 }
 .welcome-title {
-  @include wrapper;
+  @include clearfix;
   width: 100%;
-  max-width: 924px;
   font-family: $font-bold;
   text-align: center;
   color: $text-welcome-title-color;
@@ -30,11 +35,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding-bottom: 50px;
   h1 {
     line-height: 1.1;
-    margin-bottom: 60px;
+    margin: 0;
+    padding: 30px 0;
+    margin-bottom: 30px;
   }
   .btn-welcome {
     @include button($btn-welcome-primary-color, $btn-welcome-secondary-color);
+    margin-bottom: 2px;
   }
 }

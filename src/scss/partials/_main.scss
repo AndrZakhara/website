@@ -55,7 +55,7 @@
       }
     }
     @at-root #{&}__textarea {
-  
+
       @at-root #{&}--main {
         display: block;
         border: 0;
@@ -232,7 +232,7 @@
         background-repeat: no-repeat;
         background-position: -129px 0;
       }
-    }  
+    }
 }
 $configs: (
   chart-wd: (
@@ -376,14 +376,13 @@ figure {
   }
   .greeting {
     max-width: 620px;
-    margin: 0 auto;
+    //margin: 0 auto;
     h2 {
-      text-align: center;
+      //text-align: center;
     }
 }
-  
 
-  
-  
-  
-  
+
+
+
+
