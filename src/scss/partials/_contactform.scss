@@ -44,9 +44,6 @@
   color: white;
   padding-bottom: 70px;
   @include block-header;
-  .get-in-touch-header-line {
-    @include block-header-line
-  }
 }
 .l-input-form {
   @include clearfix;

@@ -1,6 +1,15 @@
 @media only screen and (min-width:320px) {
+  .services-title {
+    //h1 {
+    //  font-size: 0.6rem;
+    //}
+
+  }
   .section-content-item {
     width: 100%;
+    p {
+      padding: 0 50px;
+    }
   }
   .team-content-item {
     width: 100%;
@@ -38,8 +47,14 @@
   body {
     font-size: 0.95rem;
   }
+  .services-wrapper {
+    padding: 0 50px;
+  }
   .section-content-item {
     width: 50%;
+    p {
+      padding: 0;
+    }
   }
   .team-content-item {
     width: 50%;
@@ -60,6 +75,19 @@
     min-height: 152px;
     text-align: center;
   }
+  .services-wrapper {
+    padding: 20px;
+
+  }
+  .section-content-item {
+    width: 50%;
+    p {
+      padding: 0;
+    }
+  }
+  .section-header {
+    font-size: 40px;
+  }
 
 }
 @media only screen and (min-width:680px) {
@@ -70,13 +98,29 @@
     height: 70px;
     width: 293px;
   }
+  .services-wrapper {
+    padding: 0 80px;
+  }
+  .section-content-item {
+    width: 50%;
+    p {
+      padding: 0 30px;
+    }
+  }
 }
 @media only screen and (min-width:960px) {
   body {
     font-size: 1rem;
   }
+  .services-wrapper {
+    padding: 0;
+  }
   .section-content-item {
+
     width: 25%;
+    p {
+      padding: 0 10px;
+    }
   }
   .team-content-item {
     width: 25%;

@@ -7,7 +7,6 @@
 }
 .header {
   @include wrapper;
-  //height: 92px;
 }
 .header:after {
   content: "";
@@ -17,8 +16,6 @@
 .header-logo {
   float: left;
   padding: 56px 0 0 0;
-  //position: relative;
-  //top: 55px;
   margin-left: 42px;
   img {
     width: 118px;
@@ -26,7 +23,6 @@
   }
 }
 .welcome-title {
-  @include clearfix;
   width: 100%;
   font-family: $font-bold;
   text-align: center;
@@ -44,6 +40,5 @@
   }
   .btn-welcome {
     @include button($btn-welcome-primary-color, $btn-welcome-secondary-color);
-    margin-bottom: 2px;
   }
 }

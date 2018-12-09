@@ -1,32 +1,24 @@
 .services-main-wrapper {
   background-color: $services-bg-color;
-  padding-top: 74px;
-  padding-bottom: 70px;
-  min-height: 745px;
   .services-wrapper {
     @include wrapper;
   }
   .services-title {
     color: white;
-    padding-bottom: 82px;
+    margin-bottom: 82px;
     p {
       max-width: 580px;
+      text-align: center;
       margin: 0 auto;
     }
     @include block-header;
-    .services-header-line {
-      @include block-header-line
-    }
   }
 }
 .services-content-wrapper {
   width: 100%;
   @include clearfix;
   .section-content-item {
-
-    //width: 25%;
     @include section-content-item;
-    padding: 0 20px;
     color: $text-services-main-color;
     text-align: center;
   }

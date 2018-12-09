@@ -406,6 +406,10 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0; }
+
 @font-face {
   font-family: 'TitilliumWeb-Regular';
   src: url("../fonts/TitilliumWeb-Regular/TitilliumWeb-Regular.eot");
@@ -431,6 +435,10 @@ textarea {
   font-family: 'TitilliumWeb-Italic';
   src: url("../fonts/TitilliumWeb-Italic/TitilliumWeb-Italic.ttf") format("truetype"); }
 
+.section-size {
+  padding-top: 100px;
+  padding-bottom: 125px; }
+
 .welcome-wrapper {
   background-color: #87509c;
   min-height: 500px;
@@ -440,8 +448,7 @@ textarea {
 
 .header {
   max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px; }
+  margin: 0 auto; }
 
 .header:after {
   content: "";
@@ -467,10 +474,6 @@ textarea {
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
   padding-bottom: 50px; }
-  .welcome-title::after {
-    content: "";
-    display: block;
-    clear: both; }
   .welcome-title h1 {
     line-height: 1.1;
     margin: 0;
@@ -483,12 +486,11 @@ textarea {
     box-shadow: 0px 5px #c86a40;
     border-radius: 5px;
     border: none;
-    margin: auto;
+    margin-bottom: 6px;
     font-family: "TitilliumWeb-SemiBold", sans-serif;
     font-size: 18px;
     text-transform: uppercase;
-    color: #ffffff;
-    margin-bottom: 2px; }
+    color: #ffffff; }
     .welcome-title .btn-welcome:active {
       box-shadow: 0 2px #c86a40;
       -ms-transform: translateY(4px);
@@ -638,41 +640,43 @@ textarea {
         background-color: #643a79; } }
 
 .services-main-wrapper {
-  background-color: #17c2a4;
-  padding-top: 74px;
-  padding-bottom: 70px;
-  min-height: 745px; }
+  background-color: #17c2a4; }
   .services-main-wrapper .services-wrapper {
     max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px; }
+    margin: 0 auto; }
   .services-main-wrapper .services-title {
     color: white;
-    padding-bottom: 82px;
+    margin-bottom: 82px;
     text-align: center;
     width: 100%; }
     .services-main-wrapper .services-title p {
       max-width: 580px;
+      text-align: center;
       margin: 0 auto; }
     .services-main-wrapper .services-title h1 {
-      display: block;
+      position: relative;
       font-family: "TitilliumWeb-Bold", sans-serif;
-      font-size: 40px;
       letter-spacing: 4px;
       margin-bottom: 6px;
       padding-bottom: 0;
       text-transform: uppercase;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 30px; }
+    .services-main-wrapper .services-title h1:after {
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+      content: "";
+      display: block;
+      -ms-transform: translate(-50%, 35%);
+          transform: translate(-50%, 35%);
+      height: 4px;
+      width: 87px;
+      border-top: 4px solid rgba(0, 0, 0, 0.149); }
     .services-main-wrapper .services-title p {
       font-family: "TitilliumWeb-Regular", sans-serif;
       font-size: 18px; }
-    .services-main-wrapper .services-title .services-header-line {
-      width: 87px;
-      height: 4px;
-      background-color: rgba(0, 0, 0, 0.149);
-      margin: 0 auto;
-      margin-bottom: 15px; }
 
 .services-content-wrapper {
   width: 100%; }
@@ -682,17 +686,18 @@ textarea {
     clear: both; }
   .services-content-wrapper .section-content-item {
     float: left;
-    padding: 0 20px;
     color: #ffffff;
     text-align: center; }
-    .services-content-wrapper .section-content-item img {
-      max-height: 125px;
-      display: block;
-      margin: 0 auto;
+    .services-content-wrapper .section-content-item .services-img {
       margin-bottom: 50px; }
+      .services-content-wrapper .section-content-item .services-img img {
+        max-height: 125px;
+        display: block;
+        margin: 0 auto; }
     .services-content-wrapper .section-content-item h2 {
       font-family: "TitilliumWeb-Bold", sans-serif;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      margin-bottom: 12px; }
     .services-content-wrapper .section-content-item p {
       font-family: "TitilliumWeb-Regular", sans-serif; }
 
@@ -703,8 +708,7 @@ textarea {
   min-height: 745px; }
   .team-main-wrapper .team-wrapper {
     max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px; }
+    margin: 0 auto; }
   .team-main-wrapper .team-title {
     color: #3c4761;
     padding-bottom: 82px;
@@ -714,24 +718,29 @@ textarea {
       max-width: 580px;
       margin: 0 auto; }
     .team-main-wrapper .team-title h1 {
-      display: block;
+      position: relative;
       font-family: "TitilliumWeb-Bold", sans-serif;
-      font-size: 40px;
       letter-spacing: 4px;
       margin-bottom: 6px;
       padding-bottom: 0;
       text-transform: uppercase;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 30px; }
+    .team-main-wrapper .team-title h1:after {
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+      content: "";
+      display: block;
+      -ms-transform: translate(-50%, 35%);
+          transform: translate(-50%, 35%);
+      height: 4px;
+      width: 87px;
+      border-top: 4px solid rgba(0, 0, 0, 0.149); }
     .team-main-wrapper .team-title p {
       font-family: "TitilliumWeb-Regular", sans-serif;
       font-size: 18px; }
-    .team-main-wrapper .team-title .team-header-line {
-      width: 87px;
-      height: 4px;
-      background-color: rgba(0, 0, 0, 0.149);
-      margin: 0 auto;
-      margin-bottom: 15px; }
 
 .content-wrapper {
   width: 100%; }
@@ -828,8 +837,7 @@ textarea {
   min-height: 745px; }
   .skills-main-wrapper .skills-wrapper {
     max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px; }
+    margin: 0 auto; }
   .skills-main-wrapper .skills-title {
     color: #3c4761;
     padding-bottom: 82px;
@@ -839,24 +847,29 @@ textarea {
       max-width: 580px;
       margin: 0 auto; }
     .skills-main-wrapper .skills-title h1 {
-      display: block;
+      position: relative;
       font-family: "TitilliumWeb-Bold", sans-serif;
-      font-size: 40px;
       letter-spacing: 4px;
       margin-bottom: 6px;
       padding-bottom: 0;
       text-transform: uppercase;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 30px; }
+    .skills-main-wrapper .skills-title h1:after {
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+      content: "";
+      display: block;
+      -ms-transform: translate(-50%, 35%);
+          transform: translate(-50%, 35%);
+      height: 4px;
+      width: 87px;
+      border-top: 4px solid rgba(0, 0, 0, 0.149); }
     .skills-main-wrapper .skills-title p {
       font-family: "TitilliumWeb-Regular", sans-serif;
       font-size: 18px; }
-    .skills-main-wrapper .skills-title .skills-header-line {
-      width: 87px;
-      height: 4px;
-      background-color: rgba(0, 0, 0, 0.149);
-      margin: 0 auto;
-      margin-bottom: 15px; }
 
 .skills-content-wrapper {
   width: 100%; }
@@ -1104,8 +1117,7 @@ figure {
   min-height: 745px; }
   .portfolio-main-wrapper .portfolio-wrapper {
     max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px; }
+    margin: 0 auto; }
   .portfolio-main-wrapper .portfolio-title {
     color: #393939;
     padding-bottom: 82px;
@@ -1115,24 +1127,29 @@ figure {
       max-width: 580px;
       margin: 0 auto; }
     .portfolio-main-wrapper .portfolio-title h1 {
-      display: block;
+      position: relative;
       font-family: "TitilliumWeb-Bold", sans-serif;
-      font-size: 40px;
       letter-spacing: 4px;
       margin-bottom: 6px;
       padding-bottom: 0;
       text-transform: uppercase;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 30px; }
+    .portfolio-main-wrapper .portfolio-title h1:after {
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+      content: "";
+      display: block;
+      -ms-transform: translate(-50%, 35%);
+          transform: translate(-50%, 35%);
+      height: 4px;
+      width: 87px;
+      border-top: 4px solid rgba(0, 0, 0, 0.149); }
     .portfolio-main-wrapper .portfolio-title p {
       font-family: "TitilliumWeb-Regular", sans-serif;
       font-size: 18px; }
-    .portfolio-main-wrapper .portfolio-title .portfolio-header-line {
-      width: 87px;
-      height: 4px;
-      background-color: rgba(0, 0, 0, 0.149);
-      margin: 0 auto;
-      margin-bottom: 15px; }
 
 .portfolio-content-wrapper {
   width: 100%;
@@ -1168,7 +1185,7 @@ figure {
   box-shadow: 0px 5px #14a58c;
   border-radius: 5px;
   border: none;
-  margin: auto;
+  margin-bottom: 6px;
   font-family: "TitilliumWeb-SemiBold", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
@@ -1186,8 +1203,7 @@ figure {
   min-height: 745px; }
   .feedback-main-wrapper .feedback-wrapper {
     max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px; }
+    margin: 0 auto; }
   .feedback-main-wrapper .feedback-title {
     color: white;
     padding-bottom: 82px;
@@ -1197,24 +1213,29 @@ figure {
       max-width: 580px;
       margin: 0 auto; }
     .feedback-main-wrapper .feedback-title h1 {
-      display: block;
+      position: relative;
       font-family: "TitilliumWeb-Bold", sans-serif;
-      font-size: 40px;
       letter-spacing: 4px;
       margin-bottom: 6px;
       padding-bottom: 0;
       text-transform: uppercase;
       width: 100%;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 30px; }
+    .feedback-main-wrapper .feedback-title h1:after {
+      position: absolute;
+      left: 50%;
+      bottom: -15px;
+      content: "";
+      display: block;
+      -ms-transform: translate(-50%, 35%);
+          transform: translate(-50%, 35%);
+      height: 4px;
+      width: 87px;
+      border-top: 4px solid rgba(0, 0, 0, 0.149); }
     .feedback-main-wrapper .feedback-title p {
       font-family: "TitilliumWeb-Regular", sans-serif;
       font-size: 18px; }
-    .feedback-main-wrapper .feedback-title .feedback-header-line {
-      width: 87px;
-      height: 4px;
-      background-color: rgba(0, 0, 0, 0.149);
-      margin: 0 auto;
-      margin-bottom: 15px; }
 
 .feedback-content-wrapper {
   color: white;
@@ -1261,8 +1282,7 @@ figure {
   padding-bottom: 110px; }
   .contact-form-main-wrapper .form-wrapper {
     max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px; }
+    margin: 0 auto; }
     .contact-form-main-wrapper .form-wrapper .btn-contact-form {
       text-align: center;
       cursor: pointer;
@@ -1270,7 +1290,7 @@ figure {
       box-shadow: 0px 5px #299ec5;
       border-radius: 5px;
       border: none;
-      margin: auto;
+      margin-bottom: 6px;
       font-family: "TitilliumWeb-SemiBold", sans-serif;
       font-size: 18px;
       text-transform: uppercase;
@@ -1311,24 +1331,29 @@ figure {
   text-align: center;
   width: 100%; }
   .get-in-touch-title h1 {
-    display: block;
+    position: relative;
     font-family: "TitilliumWeb-Bold", sans-serif;
-    font-size: 40px;
     letter-spacing: 4px;
     margin-bottom: 6px;
     padding-bottom: 0;
     text-transform: uppercase;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 30px; }
+  .get-in-touch-title h1:after {
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    content: "";
+    display: block;
+    -ms-transform: translate(-50%, 35%);
+        transform: translate(-50%, 35%);
+    height: 4px;
+    width: 87px;
+    border-top: 4px solid rgba(0, 0, 0, 0.149); }
   .get-in-touch-title p {
     font-family: "TitilliumWeb-Regular", sans-serif;
     font-size: 18px; }
-  .get-in-touch-title .get-in-touch-header-line {
-    width: 87px;
-    height: 4px;
-    background-color: rgba(0, 0, 0, 0.149);
-    margin: 0 auto;
-    margin-bottom: 15px; }
 
 .l-input-form {
   max-width: 860px;
@@ -1382,6 +1407,8 @@ figure {
 @media only screen and (min-width: 320px) {
   .section-content-item {
     width: 100%; }
+    .section-content-item p {
+      padding: 0 50px; }
   .team-content-item {
     width: 100%; }
   .skills-content-item {
@@ -1407,8 +1434,12 @@ figure {
 @media only screen and (min-width: 520px) {
   body {
     font-size: 0.95rem; }
+  .services-wrapper {
+    padding: 0 50px; }
   .section-content-item {
     width: 50%; }
+    .section-content-item p {
+      padding: 0; }
   .team-content-item {
     width: 50%; }
   .skills-content-item {
@@ -1422,20 +1453,38 @@ figure {
 @media only screen and (min-width: 610px) {
   .footer {
     min-height: 152px;
-    text-align: center; } }
+    text-align: center; }
+  .services-wrapper {
+    padding: 20px; }
+  .section-content-item {
+    width: 50%; }
+    .section-content-item p {
+      padding: 0; }
+  .section-header {
+    font-size: 40px; } }
 
 @media only screen and (min-width: 680px) {
   .feedback-content-item {
     width: 50%; }
   .btn-size {
     height: 70px;
-    width: 293px; } }
+    width: 293px; }
+  .services-wrapper {
+    padding: 0 80px; }
+  .section-content-item {
+    width: 50%; }
+    .section-content-item p {
+      padding: 0 30px; } }
 
 @media only screen and (min-width: 960px) {
   body {
     font-size: 1rem; }
+  .services-wrapper {
+    padding: 0; }
   .section-content-item {
     width: 25%; }
+    .section-content-item p {
+      padding: 0 10px; }
   .team-content-item {
     width: 25%; }
   .skills-content-item {

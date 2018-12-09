@@ -1,43 +1,53 @@
 @mixin wrapper ($width: 1140px) {
   max-width: $width;
   margin: 0 auto;
-  padding: 0 20px;
 }
 @mixin block-header {
   text-align: center;
   width: 100%;
   h1 {
-    display: block;
+    position: relative;
     font-family: $font-bold;
-    font-size: 40px;
     letter-spacing: 4px;
     margin-bottom: 6px;
     padding-bottom: 0;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
+    margin-bottom: 30px;
+  }
+  h1:after {
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    content: "";
+    display: block;
+    transform: translate(-50%,35%);
+    height: 4px;
+    width: 87px;
+    border-top: 4px solid $line-color;
+
   }
   p {
     font-family: $font-regular;
     font-size: 18px;
   }
 }
-@mixin block-header-line {
-  width: 87px;
-  height: 4px;
-  background-color: $line-color;
-  margin: 0 auto;
-  margin-bottom: 15px;
-}
+//@mixin block-header-line {
+//  width: 87px;
+//  height: 4px;
+//  background-color: $line-color;
+//  margin: 0 auto;
+//  margin-bottom: 15px;
+//}
 @mixin button ($primary-color, $shadow-color) {
   text-align: center;
-  //display: inline-block;
   cursor: pointer;
   background-color: $primary-color;
   box-shadow: 0px 5px $shadow-color;
   border-radius: 5px;
   border: none;
-  margin: auto;
+  margin-bottom: 6px;
   font-family: $font-semiBold;
   font-size: 18px;
   text-transform: uppercase;
@@ -60,15 +70,19 @@
 @mixin  section-content-item {
   //width: 25%;
   float: left;
-  img {
-    max-height: 125px;
-    display: block;
-    margin: 0 auto;
+  .services-img {
     margin-bottom: 50px;
+    img {
+      max-height: 125px;
+      display: block;
+      margin: 0 auto;
+      //margin-bottom: 50px;
+    }
   }
   h2 {
     font-family: $font-bold;
     text-transform: uppercase;
+    margin-bottom: 12px;
   }
   p {
     font-family: $font-regular;
