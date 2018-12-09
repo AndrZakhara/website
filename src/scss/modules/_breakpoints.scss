@@ -71,9 +71,7 @@
       padding: 0;
     }
   }
-  .portfolio-content-item {
-     width: 50%;
-   }
+
   .footer {
     min-height: 172px;
     text-align: center;
@@ -123,6 +121,9 @@
     p {
       padding: 0 50px;
     }
+  }
+  .portfolio-content-item {
+    width: 50%;
   }
 }
 @media only screen and (min-width:960px) {

@@ -125,14 +125,20 @@
 }
 @mixin  portfolio-content-item {
   float: left;
-  margin-bottom: 40px;
-  img {
-    height: auto;
-    width: 100%;
-    max-width: 540px;
-    display: block;
-    padding: 0 2px;
-    margin: 0 auto;
+  margin-bottom: 55px;
+  //padding: 0 10px;
+  .portfolio-img {
+    margin-bottom: 36px;
+    text-align: center;
+    padding: 0 20px;
+    img {
+      height: auto;
+      width: 100%;
+      max-width: 540px;
+      display: block;
+      padding: 0 2px;
+      margin: 0 auto;
+    }
   }
   h2 {
     font-family: $font-bold;

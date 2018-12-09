@@ -1,14 +1,12 @@
 .portfolio-main-wrapper {
+  text-align: center;
   background-color: $portfolio-bg-color;
-  //padding-top: 74px;
-  //padding-bottom: 110px;
-  //min-height: 745px;
   .portfolio-wrapper {
     @include wrapper;
   }
   .portfolio-title {
     color: $text-portfolio-main-color;
-    padding-bottom: 82px;
+    margin-bottom: 40px;
     p {
       max-width: 580px;
       margin: 0 auto;
@@ -28,5 +26,4 @@
 }
 .btn-portfolio {
   @include button($btn-portfolio-primary-color, $btn-portfolio-secondary-color);
-  display: block;
 }

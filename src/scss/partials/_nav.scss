@@ -3,10 +3,9 @@
   ul {
     list-style-type: none;
     padding: 0;
-    padding-top: 30px;
     overflow: hidden;
     width: 380px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
   }
   li {
     float: left;
@@ -15,7 +14,7 @@
       display: inline-block;
       color: #393939;
       text-align: center;
-      padding: 8px 0;
+      padding: 11px 0;
       text-decoration: none;
       text-transform: uppercase;
       border-radius: 4px;

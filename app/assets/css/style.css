@@ -499,10 +499,9 @@ h1, h2, h3, h4, p, ul {
 .section-nav ul {
   list-style-type: none;
   padding: 0;
-  padding-top: 30px;
   overflow: hidden;
   width: 380px;
-  margin: 0 auto; }
+  margin: 0 auto 50px auto; }
 
 .section-nav li {
   float: left;
@@ -511,7 +510,7 @@ h1, h2, h3, h4, p, ul {
     display: inline-block;
     color: #393939;
     text-align: center;
-    padding: 8px 0;
+    padding: 11px 0;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 4px;
@@ -1111,13 +1110,14 @@ figure {
   margin: 1rem !important; }
 
 .portfolio-main-wrapper {
+  text-align: center;
   background-color: #ffdd99; }
   .portfolio-main-wrapper .portfolio-wrapper {
     max-width: 1140px;
     margin: 0 auto; }
   .portfolio-main-wrapper .portfolio-title {
     color: #393939;
-    padding-bottom: 82px;
+    margin-bottom: 40px;
     text-align: center;
     width: 100%; }
     .portfolio-main-wrapper .portfolio-title p {
@@ -1157,16 +1157,20 @@ figure {
     clear: both; }
   .portfolio-content-wrapper .portfolio-content-item {
     float: left;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
     color: #393939;
     text-align: center; }
-    .portfolio-content-wrapper .portfolio-content-item img {
-      height: auto;
-      width: 100%;
-      max-width: 540px;
-      display: block;
-      padding: 0 2px;
-      margin: 0 auto; }
+    .portfolio-content-wrapper .portfolio-content-item .portfolio-img {
+      margin-bottom: 36px;
+      text-align: center;
+      padding: 0 20px; }
+      .portfolio-content-wrapper .portfolio-content-item .portfolio-img img {
+        height: auto;
+        width: 100%;
+        max-width: 540px;
+        display: block;
+        padding: 0 2px;
+        margin: 0 auto; }
     .portfolio-content-wrapper .portfolio-content-item h2 {
       font-family: "TitilliumWeb-Bold", sans-serif;
       text-transform: uppercase; }
@@ -1186,8 +1190,7 @@ figure {
   font-family: "TitilliumWeb-SemiBold", sans-serif;
   font-size: 18px;
   text-transform: uppercase;
-  color: #ffffff;
-  display: block; }
+  color: #ffffff; }
   .btn-portfolio:active {
     box-shadow: 0 2px #14a58c;
     -ms-transform: translateY(4px);
@@ -1447,8 +1450,6 @@ figure {
     width: 50%; }
     .skills-content-item p {
       padding: 0; }
-  .portfolio-content-item {
-    width: 50%; }
   .footer {
     min-height: 172px;
     text-align: center; } }
@@ -1481,7 +1482,9 @@ figure {
     .section-content-item p {
       padding: 0 30px; }
   .skills-content-item p {
-    padding: 0 50px; } }
+    padding: 0 50px; }
+  .portfolio-content-item {
+    width: 50%; } }
 
 @media only screen and (min-width: 960px) {
   body {
