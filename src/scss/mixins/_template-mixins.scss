@@ -33,13 +33,6 @@
     font-size: 18px;
   }
 }
-//@mixin block-header-line {
-//  width: 87px;
-//  height: 4px;
-//  background-color: $line-color;
-//  margin: 0 auto;
-//  margin-bottom: 15px;
-//}
 @mixin button ($primary-color, $shadow-color) {
   text-align: center;
   cursor: pointer;

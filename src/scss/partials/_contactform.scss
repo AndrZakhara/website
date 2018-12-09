@@ -1,15 +1,11 @@
 
 .contact-form-main-wrapper {
   background-color: $get-in-touch-bg-color;
-  min-height: 820px;
-  padding-top: 90px;
-  padding-bottom: 110px;
   .form-wrapper {
     @include wrapper;
+    text-align: center;
     .btn-contact-form {
       @include button($btn-form-primary-color, $btn-form-secondary-color);
-      margin: 0 auto;
-      display: block;
     }
     .contact-form-input-text {
       border: 0;
@@ -42,10 +38,10 @@
 }
 .get-in-touch-title {
   color: white;
-  padding-bottom: 70px;
+  margin-bottom: 70px;
   @include block-header;
 }
-.l-input-form {
+.wrapper-input-form {
   @include clearfix;
   max-width: 860px;
   margin: 0 auto;

@@ -1273,13 +1273,11 @@ figure {
       padding: 0; }
 
 .contact-form-main-wrapper {
-  background-color: #3c5499;
-  min-height: 820px;
-  padding-top: 90px;
-  padding-bottom: 110px; }
+  background-color: #3c5499; }
   .contact-form-main-wrapper .form-wrapper {
     max-width: 1140px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
     .contact-form-main-wrapper .form-wrapper .btn-contact-form {
       text-align: center;
       cursor: pointer;
@@ -1291,9 +1289,7 @@ figure {
       font-family: "TitilliumWeb-SemiBold", sans-serif;
       font-size: 18px;
       text-transform: uppercase;
-      color: #ffffff;
-      margin: 0 auto;
-      display: block; }
+      color: #ffffff; }
       .contact-form-main-wrapper .form-wrapper .btn-contact-form:active {
         box-shadow: 0 2px #299ec5;
         -ms-transform: translateY(4px);
@@ -1324,7 +1320,7 @@ figure {
 
 .get-in-touch-title {
   color: white;
-  padding-bottom: 70px;
+  margin-bottom: 70px;
   text-align: center;
   width: 100%; }
   .get-in-touch-title h1 {
@@ -1352,11 +1348,11 @@ figure {
     font-family: "TitilliumWeb-Regular", sans-serif;
     font-size: 18px; }
 
-.l-input-form {
+.wrapper-input-form {
   max-width: 860px;
   margin: 0 auto;
   padding: 0 10px; }
-  .l-input-form::after {
+  .wrapper-input-form::after {
     content: "";
     display: block;
     clear: both; }
