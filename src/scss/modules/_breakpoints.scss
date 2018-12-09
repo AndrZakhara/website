@@ -103,6 +103,7 @@
 @media only screen and (min-width:680px) {
   .feedback-content-item {
     width: 50%;
+    font-size: 1.1rem;
   }
   .btn-size {
     height: 70px;
@@ -156,5 +157,8 @@
   }
   .welcome-title {
     font-size: 21px;
+  }
+  .feedback-content-item {
+    font-size: 1.3rem;
   }
 }

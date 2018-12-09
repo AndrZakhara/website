@@ -153,7 +153,7 @@
 @mixin  feedback-content-item {
   @include clearfix;
   float: left;
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   img {
     height: 96px;
     width: 96px;
@@ -174,7 +174,7 @@
   p {
     font-family: $font-regular;
     display: block;
-    margin-top: 0;
+    margin-bottom: 30px;
   }
   p:last-of-type {
     color: $text-feedback-subtitle-color;
