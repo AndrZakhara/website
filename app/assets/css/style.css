@@ -1381,7 +1381,8 @@ figure {
   width: 400px;
   height: 100px;
   background-color: #c9e5ff;
-  border-radius: 5px; }
+  border-radius: 5px;
+  z-index: 10; }
 
 @media only screen and (min-width: 320px) {
   .section-content-item {

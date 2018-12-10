@@ -2,7 +2,8 @@ function createNewElement(element, selector) {
 
   let el = document.createElement(element);
   el.classList.add(selector);
-  document.body.appendChild(el);
+  // document.body.appendChild(el);
+  document.body.insertAdjacentElement('afterBegin', el);
   console.log(el);
 }
 
