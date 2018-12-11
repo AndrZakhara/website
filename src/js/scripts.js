@@ -14,8 +14,16 @@ function createAppStructure() {
   const btnWrapper = createElement('div', { className: 'btn-wrapper' }, btnPrev, btnNext, btnParent, btnChildren);
   
   const mainAppWrapper = createElement('div', { className: 'selector-search-app' }, textFieldWrapper, btnWrapper);
-
+  
+  btnSearch.disabled = true;
   btnSearch.addEventListener('click', onclickSearch);
+  inputSearch.addEventListener('input', (e) => {
+    if(e.target.value === '') {
+      document.querySelector('.search-btn').disabled = true;
+    } else {
+      document.querySelector('.search-btn').disabled = false;
+    };
+  })
 
   document.body.insertAdjacentElement('afterBegin', mainAppWrapper);
 }
@@ -51,10 +59,25 @@ const addClass = () => {
       selectedElement.classList.add('selected-element-search');
     }
   }
+  scrollToElement('.selected-element-search');
  
 }
 const removeClass = () => {
-  console.log('remove class');
+  if(selectedElement !== null || selectedElement !== undefined) {
+    selectedElement.classList.remove('selected-element-search');
+  }
+}
+
+function scrollToElement(theElement) {
+    if (typeof theElement === "string") theElement = document.querySelector(theElement);
+    var selectedPosX = 0;
+    var selectedPosY = 0;
+    while (theElement != null) {
+        selectedPosX += theElement.offsetLeft;
+        selectedPosY += theElement.offsetTop;
+        theElement = theElement.offsetParent;
+    }
+    window.scrollTo(selectedPosX, selectedPosY);
 }
 
 function appInit() {
