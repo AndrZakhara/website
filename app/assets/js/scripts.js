@@ -65,26 +65,33 @@ const handleParent = () => {
 const addClass = () => {
   console.log('add class');
   console.log(selectedElement);
+  try {
+    if(selectedElement === '') {
+      const selected = document.querySelector(inputValue);
 
-  if(selectedElement === '') {
-    const selected = document.querySelector(inputValue);
-
-    if (selected !== undefined && selected !== null) {
-      selectedElement = selected;
-      selectedElement.classList.add('selected-element-search');
-      findRelative(selectedElement);
+      if (selected !== undefined && selected !== null) {
+        selectedElement = selected;
+        selectedElement.classList.add('selected-element-search');
+        findRelative(selectedElement);
+      }
+      // console.log(selectedElement);
     }
-    // console.log(selectedElement);
-  }
-  else if(selectedElement !== null || selectedElement !== undefined) {
-    selectedElement.classList.remove('selected-element-search');
-    const selected = document.querySelector(inputValue);
+    else if(selectedElement !== null || selectedElement !== undefined) {
+      selectedElement.classList.remove('selected-element-search');
+      const selected = document.querySelector(inputValue);
 
-    if (selected !== undefined && selected !== null) {
-      selectedElement = selected;
-      selectedElement.classList.add('selected-element-search');
-      findRelative(selectedElement);
+      if (selected !== undefined && selected !== null) {
+        selectedElement = selected;
+        selectedElement.classList.add('selected-element-search');
+        findRelative(selectedElement);
+      }
     }
+  } catch (err) {
+    document.querySelector('.search-btn').disabled = true;
+    document.querySelector('.prev-btn').disabled = true;
+    document.querySelector('.next-btn').disabled = true;
+    document.querySelector('.parent-btn').disabled = true;
+    document.querySelector('.children-btn').disabled = true;
   }
 
   document.querySelector('.search-btn').disabled = true;
