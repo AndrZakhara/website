@@ -25,13 +25,7 @@ function createAppStructure() {
   
   btnSearch.disabled = true;
   btnSearch.addEventListener('click', onclickSearch);
-  inputSearch.addEventListener('input', (e) => {
-    if(e.target.value === '') {
-      document.querySelector('.search-btn').disabled = true;
-    } else {
-      document.querySelector('.search-btn').disabled = false;
-    };
-  })
+  inputSearch.addEventListener('input', inputHandler);
 
   document.body.insertAdjacentElement('afterBegin', mainAppWrapper);
 }
@@ -42,6 +36,14 @@ const onclickSearch = (e) => {
   document.querySelector('.search-input').value = '';
   console.log(inputValue);
   addClass();
+}
+const inputHandler = (e) => {  
+  if(e.target.value === '') {
+    document.querySelector('.search-btn').disabled = true;
+  } 
+  else {
+    document.querySelector('.search-btn').disabled = false;
+  };
 }
 
 const addClass = () => {
@@ -67,8 +69,9 @@ const addClass = () => {
       selectedElement.classList.add('selected-element-search');
     }
   }
-  scrollToElement('.selected-element-search');
- 
+
+  document.querySelector('.search-btn').disabled = true;
+  scrollToElement('.selected-element-search'); 
 }
 const removeClass = () => {
   if(selectedElement !== null || selectedElement !== undefined) {
@@ -85,6 +88,7 @@ function scrollToElement(theElement) {
         selectedPosY += theElement.offsetTop;
         theElement = theElement.offsetParent;
     }
+    selectedPosY = selectedPosY-20;
     window.scrollTo(selectedPosX, selectedPosY);
 }
 

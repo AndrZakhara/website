@@ -1408,7 +1408,7 @@ figure {
     width: 24%; }
 
 .selected-element-search {
-  outline: 3px solid red; }
+  outline: 6px solid red; }
 
 @media only screen and (min-width: 320px) {
   .section-content-item {
