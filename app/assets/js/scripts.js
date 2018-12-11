@@ -6,167 +6,206 @@
  * @version 1.0.0
  * Copyright 2018. MIT licensed.
  */
-let inputValue = '',
+(function () {
+  let inputValue = '',
     selectedElement = '',
-    // previous = false,
-    // next = false,
-    // parent = false,
+    previousNode = '',
+    nextNode = '',
     parentNode = '',
-    // children = false,
     childrenNode = '';
 
-function createAppStructure() {
-  const inputSearch = createElement('input', { className: 'search-input', type: 'text', placeholder: 'Selector' });
-  const btnSearch = createElement('input', { className: 'search-btn', type: 'button', value: 'search' });
+  function createApp() {
+    const inputSearch = createElement('input', {className: 'search-input', type: 'text', placeholder: 'Selector'});
+    const btnSearch = createElement('input', {className: 'search-btn', type: 'button', value: 'search'});
 
-  const btnPrev = createElement('input', { className: 'prev-btn', type: 'button', value: 'Prev' });
-  const btnNext = createElement('input', { className: 'next-btn', type: 'button', value: 'Next' });
-  const btnParent = createElement('input', { className: 'parent-btn', type: 'button', value: 'Parent' });
-  const btnChildren = createElement('input', { className: 'children-btn', type: 'button', value: 'Children' });
+    const btnPrev = createElement('input', {className: 'prev-btn', type: 'button', value: 'Prev'});
+    const btnNext = createElement('input', {className: 'next-btn', type: 'button', value: 'Next'});
+    const btnParent = createElement('input', {className: 'parent-btn', type: 'button', value: 'Parent'});
+    const btnChildren = createElement('input', {className: 'children-btn', type: 'button', value: 'Children'});
 
-  const textFieldWrapper = createElement('div', { className: 'text-field-wrapper' }, inputSearch, btnSearch);
-  const btnWrapper = createElement('div', { className: 'btn-wrapper' }, btnPrev, btnNext, btnParent, btnChildren);
+    const textFieldWrapper = createElement('div', {className: 'text-field-wrapper'}, inputSearch, btnSearch);
+    const btnWrapper = createElement('div', {className: 'btn-wrapper'}, btnPrev, btnNext, btnParent, btnChildren);
 
-  const mainAppWrapper = createElement('div', { className: 'selector-search-app' }, textFieldWrapper, btnWrapper);
+    const mainAppWrapper = createElement('div', {className: 'selector-search-app'}, textFieldWrapper, btnWrapper);
 
-  btnSearch.disabled = true;
-  btnPrev.disabled = true;
-  btnNext.disabled = true;
-  btnParent.disabled = true;
-  btnChildren.disabled = true;
+    btnSearch.disabled = true;
+    btnPrev.disabled = true;
+    btnNext.disabled = true;
+    btnParent.disabled = true;
+    btnChildren.disabled = true;
 
-  btnSearch.addEventListener('click', handleSearch);
-  inputSearch.addEventListener('input', handleInput);
-  btnParent.addEventListener('click', handleParent);
-  btnChildren.addEventListener('click', handleChildren);
+    btnSearch.addEventListener('click', handleSearch);
+    inputSearch.addEventListener('input', handleInput);
+    btnParent.addEventListener('click', handleParent);
+    btnChildren.addEventListener('click', handleChildren);
+    btnNext.addEventListener('click', handleNext);
+    btnPrev.addEventListener('click', handlePrevious);
 
-  document.body.insertAdjacentElement('beforeend', mainAppWrapper);
-}
-
-const handleSearch = () => {
-  inputValue = document.querySelector('.search-input').value;
-  document.querySelector('.search-input').value = '';
-  document.querySelector('.search-btn').disabled = true;
-
-  try {
-    if(selectedElement === '') {
-      const selected = document.querySelector(inputValue);
-
-      if (selected !== undefined && selected !== null) {
-        selectedElement = selected;
-        selectedElement.classList.add('selected-element-search');
-        findRelative(selectedElement);
-      }
-    }
-    else if(selectedElement !== null || selectedElement !== undefined) {
-      selectedElement.classList.remove('selected-element-search');
-      const selected = document.querySelector(inputValue);
-
-      if (selected !== undefined && selected !== null) {
-        selectedElement = selected;
-        selectedElement.classList.add('selected-element-search');
-        findRelative(selectedElement);
-      }
-    }
+    document.body.insertAdjacentElement('beforeend', mainAppWrapper);
   }
-  catch (err) {
+
+  const handleSearch = () => {
+    inputValue = document.querySelector('.search-input').value;
+    document.querySelector('.search-input').value = '';
     document.querySelector('.search-btn').disabled = true;
-    document.querySelector('.prev-btn').disabled = true;
-    document.querySelector('.next-btn').disabled = true;
-    document.querySelector('.parent-btn').disabled = true;
-    document.querySelector('.children-btn').disabled = true;
-  }
 
-  document.querySelector('.search-btn').disabled = true;
-  scrollToElement('.selected-element-search');
-};
+    try {
+      if (selectedElement === '') {
+        const selected = document.querySelector(inputValue);
 
-const handleInput = (e) => {
-  (e.target.value === '')
-    ? document.querySelector('.search-btn').disabled = true
-    :document.querySelector('.search-btn').disabled = false
-};
+        if (selected !== undefined && selected !== null) {
+          selectedElement = selected;
+          selectedElement.classList.add('selected-element-search');
+          findRelative(selectedElement);
+        }
+      }
+      else if (selectedElement !== null || selectedElement !== undefined) {
+        selectedElement.classList.remove('selected-element-search');
+        const selected = document.querySelector(inputValue);
 
-const handleParent = () => {
-  selectedElement.classList.remove('selected-element-search');
-  selectedElement = parentNode;
-  selectedElement.classList.add('selected-element-search');
-  findRelative(selectedElement);
-  scrollToElement('.selected-element-search');
-};
+        if (selected !== undefined && selected !== null) {
+          selectedElement = selected;
+          selectedElement.classList.add('selected-element-search');
+          findRelative(selectedElement);
+        }
+      }
+    }
+    catch (err) {
+      document.querySelector('.search-btn').disabled = true;
+      document.querySelector('.prev-btn').disabled = true;
+      document.querySelector('.next-btn').disabled = true;
+      document.querySelector('.parent-btn').disabled = true;
+      document.querySelector('.children-btn').disabled = true;
+    }
 
-const handleChildren = () => {
-  selectedElement.classList.remove('selected-element-search');
-  selectedElement = childrenNode;
-  selectedElement.classList.add('selected-element-search');
-  findRelative(selectedElement);
-  scrollToElement('.selected-element-search');
-};
+    document.querySelector('.search-btn').disabled = true;
 
-function scrollToElement(theElement) {
-  let selectedPosX = 0;
-  let selectedPosY = 0;
+    scrollToElement('.selected-element-search');
+  };
 
-  if (typeof theElement === "string") theElement = document.querySelector(theElement);
+  const handleInput = (e) => {
+    (e.target.value === '')
+      ? document.querySelector('.search-btn').disabled = true
+      : document.querySelector('.search-btn').disabled = false
+  };
+
+  const handleParent = () => {
+    helperForHandler(parentNode);
+  };
+
+  const handleChildren = () => {
+    helperForHandler(childrenNode);
+  };
+
+  const handleNext = () => {
+    helperForHandler(nextNode);
+  };
+
+  const handlePrevious = () => {
+    helperForHandler(previousNode);
+  };
+
+  const helperForHandler = (newSelected) => {
+    selectedElement.classList.remove('selected-element-search');
+    selectedElement = newSelected;
+    selectedElement.classList.add('selected-element-search');
+
+    findRelative(selectedElement);
+    scrollToElement('.selected-element-search');
+  };
+
+  function scrollToElement(theElement) {
+    let selectedPosX = 0;
+    let selectedPosY = 0;
+
+    if (typeof theElement === "string") theElement = document.querySelector(theElement);
 
     while (theElement !== null) {
-        selectedPosX += theElement.offsetLeft;
-        selectedPosY += theElement.offsetTop;
-        theElement = theElement.offsetParent;
+      selectedPosX += theElement.offsetLeft;
+      selectedPosY += theElement.offsetTop;
+      theElement = theElement.offsetParent;
     }
 
-    selectedPosY = selectedPosY-20;
+    selectedPosY = selectedPosY - 20;
     window.scrollTo(selectedPosX, selectedPosY);
-}
+  }
 
-function appInit() {
-  createAppStructure();
-}
+  function findRelative(element) {
+    const tagNameParent = element.parentNode.tagName;
+    const child = element.children[0];
+    let siblingArr = [];
 
-function findRelative(element) {
-  const tagNameParent = element.parentNode.tagName;
-  const child = element.children[0];
-
-  if(
-    element.parentNode !== undefined
-    // && tagNameParent !== 'BODY'
-    && tagNameParent !== 'HTML'
-    && tagNameParent !== 'document'
-    && tagNameParent !== undefined
+    if (
+      element.parentNode !== undefined
+      // && tagNameParent !== 'BODY'
+      && tagNameParent !== 'HTML'
+      && tagNameParent !== 'document'
+      && tagNameParent !== undefined
     ) {
-    document.querySelector('.parent-btn').disabled = false;
-    parentNode = element.parentNode;
-  }
-  else {
-    document.querySelector('.parent-btn').disabled = true;
-    parentNode = '';
-  }
-
-  if(child !== undefined) {
-    document.querySelector('.children-btn').disabled = false;
-    childrenNode = child;
-  }
-  else {
-    document.querySelector('.children-btn').disabled = true;
-    childrenNode = '';
-  }
-}
-
-function createElement(tag, props, ...children) {
-  const element = document.createElement(tag);
-
-  Object.keys(props).forEach(key => (element[key] = props[key]));
-
-  children.forEach(child => {
-
-    if (typeof child === "string") {
-      child = document.createTextNode(child);
+      document.querySelector('.parent-btn').disabled = false;
+      parentNode = element.parentNode;
+    }
+    else {
+      document.querySelector('.parent-btn').disabled = true;
+      parentNode = '';
     }
 
-    element.appendChild(child);
-  });
+    if (child !== undefined) {
+      document.querySelector('.children-btn').disabled = false;
+      childrenNode = child;
+    }
+    else {
+      document.querySelector('.children-btn').disabled = true;
+      childrenNode = '';
+    }
 
-  return element;
-}
+    siblingArr = [].slice.call(element.parentNode.children);
 
-document.addEventListener("DOMContentLoaded", appInit);
+    if (siblingArr.length > 1) {
+      siblingArr.forEach((item, index, arr) => {
+
+        if (item.classList.contains('selected-element-search')) {
+
+          if (index >= 1) {
+            previousNode = arr[index - 1];
+            document.querySelector('.prev-btn').disabled = false;
+          } else {
+            previousNode = '';
+            document.querySelector('.prev-btn').disabled = true;
+          }
+
+          if (index === arr.length - 1) {
+            nextNode = '';
+            document.querySelector('.next-btn').disabled = true;
+          } else {
+            nextNode = arr[index + 1];
+            document.querySelector('.next-btn').disabled = false;
+          }
+        }
+      })
+    } else {
+      previousNode = '';
+      document.querySelector('.prev-btn').disabled = true;
+      document.querySelector('.next-btn').disabled = true;
+    }
+  }
+
+  function createElement(tag, props, ...children) {
+    const element = document.createElement(tag);
+
+    Object.keys(props).forEach(key => (element[key] = props[key]));
+
+    children.forEach(child => {
+
+      if (typeof child === "string") {
+        child = document.createTextNode(child);
+      }
+
+      element.appendChild(child);
+    });
+
+    return element;
+  }
+
+  document.addEventListener("DOMContentLoaded", createApp);
+}());
