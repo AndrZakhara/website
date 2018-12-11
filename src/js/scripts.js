@@ -30,6 +30,7 @@ function createAppStructure() {
   btnSearch.addEventListener('click', handleSearch);
   inputSearch.addEventListener('input', handleInput);
   btnParent.addEventListener('click', handleParent);
+  btnChildren.addEventListener('click', handleChildren);
 
   document.body.insertAdjacentElement('beforeend', mainAppWrapper);
 }
@@ -38,7 +39,38 @@ const handleSearch = () => {
   inputValue = document.querySelector('.search-input').value;
   document.querySelector('.search-input').value = '';
   document.querySelector('.search-btn').disabled = true;
-  addClass();
+
+  try {
+    if(selectedElement === '') {
+      const selected = document.querySelector(inputValue);
+
+      if (selected !== undefined && selected !== null) {
+        selectedElement = selected;
+        selectedElement.classList.add('selected-element-search');
+        findRelative(selectedElement);
+      }
+    }
+    else if(selectedElement !== null || selectedElement !== undefined) {
+      selectedElement.classList.remove('selected-element-search');
+      const selected = document.querySelector(inputValue);
+
+      if (selected !== undefined && selected !== null) {
+        selectedElement = selected;
+        selectedElement.classList.add('selected-element-search');
+        findRelative(selectedElement);
+      }
+    }
+  }
+  catch (err) {
+    document.querySelector('.search-btn').disabled = true;
+    document.querySelector('.prev-btn').disabled = true;
+    document.querySelector('.next-btn').disabled = true;
+    document.querySelector('.parent-btn').disabled = true;
+    document.querySelector('.children-btn').disabled = true;
+  }
+
+  document.querySelector('.search-btn').disabled = true;
+  scrollToElement('.selected-element-search');
 };
 
 const handleInput = (e) => {
@@ -52,49 +84,16 @@ const handleParent = () => {
   selectedElement = parentNode;
   selectedElement.classList.add('selected-element-search');
   findRelative(selectedElement);
-};
-
-const addClass = () => {
-  console.log('add class');
-  console.log(selectedElement);
-  try {
-    if(selectedElement === '') {
-      const selected = document.querySelector(inputValue);
-
-      if (selected !== undefined && selected !== null) {
-        selectedElement = selected;
-        selectedElement.classList.add('selected-element-search');
-        findRelative(selectedElement);
-      }
-      // console.log(selectedElement);
-    }
-    else if(selectedElement !== null || selectedElement !== undefined) {
-      selectedElement.classList.remove('selected-element-search');
-      const selected = document.querySelector(inputValue);
-
-      if (selected !== undefined && selected !== null) {
-        selectedElement = selected;
-        selectedElement.classList.add('selected-element-search');
-        findRelative(selectedElement);
-      }
-    }
-  } catch (err) {
-    document.querySelector('.search-btn').disabled = true;
-    document.querySelector('.prev-btn').disabled = true;
-    document.querySelector('.next-btn').disabled = true;
-    document.querySelector('.parent-btn').disabled = true;
-    document.querySelector('.children-btn').disabled = true;
-  }
-
-  document.querySelector('.search-btn').disabled = true;
   scrollToElement('.selected-element-search');
 };
 
-// const removeClass = () => {
-//   if(selectedElement !== null || selectedElement !== undefined) {
-//     selectedElement.classList.remove('selected-element-search');
-//   }
-// };
+const handleChildren = () => {
+  selectedElement.classList.remove('selected-element-search');
+  selectedElement = childrenNode;
+  selectedElement.classList.add('selected-element-search');
+  findRelative(selectedElement);
+  scrollToElement('.selected-element-search');
+};
 
 function scrollToElement(theElement) {
   let selectedPosX = 0;
@@ -119,17 +118,14 @@ function appInit() {
 function findRelative(element) {
   const tagNameParent = element.parentNode.tagName;
   const child = element.children[0];
-  // console.log(element.childNodes);
-  console.log(`tag: ${tagNameParent}`);
-  console.log(`tagChild: ${child}`);
 
-  if(element.parentNode !== undefined
-    && tagNameParent !== 'BODY'
+  if(
+    element.parentNode !== undefined
+    // && tagNameParent !== 'BODY'
     && tagNameParent !== 'HTML'
     && tagNameParent !== 'document'
     && tagNameParent !== undefined
     ) {
-    console.log(element.parentNode);
     document.querySelector('.parent-btn').disabled = false;
     parentNode = element.parentNode;
   }
@@ -140,7 +136,7 @@ function findRelative(element) {
 
   if(child !== undefined) {
     document.querySelector('.children-btn').disabled = false;
-    childrenNode = child.tagName;
+    childrenNode = child;
   }
   else {
     document.querySelector('.children-btn').disabled = true;
