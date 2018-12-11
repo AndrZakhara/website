@@ -1,5 +1,6 @@
 .selector-search-app {
   position: fixed;
+  padding-top: 20px;
   top: 20vh;
   right: 20px;
   width: 400px;
@@ -7,4 +8,29 @@
   background-color: #c9e5ff;
   border-radius: 5px;
   z-index: 10;
+}
+.text-field-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  .search-btn {
+    width: 24%;
+  }
+  .search-input {
+    width: 74.5%;
+  }
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  input {
+    width: 24%;
+  }
+}
+
+.selected-element-search {
+  outline: 3px solid red;
 }

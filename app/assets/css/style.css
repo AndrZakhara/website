@@ -1376,6 +1376,7 @@ figure {
 
 .selector-search-app {
   position: fixed;
+  padding-top: 20px;
   top: 20vh;
   right: 20px;
   width: 400px;
@@ -1383,6 +1384,31 @@ figure {
   background-color: #c9e5ff;
   border-radius: 5px;
   z-index: 10; }
+
+.text-field-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0 10px; }
+  .text-field-wrapper .search-btn {
+    width: 24%; }
+  .text-field-wrapper .search-input {
+    width: 74.5%; }
+
+.btn-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 0 10px; }
+  .btn-wrapper input {
+    width: 24%; }
+
+.selected-element-search {
+  outline: 3px solid red; }
 
 @media only screen and (min-width: 320px) {
   .section-content-item {
