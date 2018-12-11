@@ -4,7 +4,8 @@ let inputValue = '',
     next = false,
     parent = false,
     parentNode = '',
-    children = false;
+    children = false,
+    childrenNode = '';
 
 function createAppStructure() {
   const inputSearch = createElement('input', { className: 'search-input', type: 'text', placeholder: 'Selector' });
@@ -49,8 +50,6 @@ const handleInput = (e) => {
   };
 }
 const handleParent = () => {
-  // console.log(`handleParent: ${selectedElement}`);
-
   selectedElement.classList.remove('selected-element-search');
   selectedElement = parentNode;
   selectedElement.classList.add('selected-element-search');
@@ -111,7 +110,10 @@ function appInit() {
 
 function findRelative(element) {
   const tagNameParent = element.parentNode.tagName;
+  const child = element.children[0];
+  // console.log(element.childNodes);
   console.log(`tag: ${tagNameParent}`);
+  console.log(`tagChild: ${child}`);
 
   if(element.parentNode !== undefined 
     && tagNameParent !== 'BODY'
@@ -125,6 +127,13 @@ function findRelative(element) {
   } else {
     document.querySelector('.parent-btn').disabled = true;
     parentNode = '';
+  }
+  if(child !== undefined) {    
+    document.querySelector('.children-btn').disabled = false;
+    childrenNode = child.tagName;
+  } else {    
+    document.querySelector('.children-btn').disabled = true;
+    childrenNode = '';
   }
 }
 
