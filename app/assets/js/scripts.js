@@ -6,8 +6,15 @@
  * @version 1.0.0
  * Copyright 2018. MIT licensed.
  */
-let inputValue = '';
-let selectedElement = '';
+let inputValue = '',
+    selectedElement = '',
+    previous = false,
+    next = false,
+    parent = false,
+    parentNode = '',
+    children = false;
+     
+
 
 function createAppStructure() {
   const inputSearch = createElement('input', { className: 'search-input', type: 'text', placeholder: 'Selector' });
@@ -24,26 +31,40 @@ function createAppStructure() {
   const mainAppWrapper = createElement('div', { className: 'selector-search-app' }, textFieldWrapper, btnWrapper);
   
   btnSearch.disabled = true;
-  btnSearch.addEventListener('click', onclickSearch);
-  inputSearch.addEventListener('input', inputHandler);
+  btnPrev.disabled = true;
+  btnNext.disabled = true;
+  btnParent.disabled = true;
+  btnChildren.disabled = true;
+
+  btnSearch.addEventListener('click', handleSearch);
+  inputSearch.addEventListener('input', handleInput);
+  btnParent.addEventListener('click', handleParent);
 
   document.body.insertAdjacentElement('afterBegin', mainAppWrapper);
 }
 
-const onclickSearch = (e) => {
+const handleSearch = (e) => {
   inputValue = document.querySelector('.search-input').value;
   
   document.querySelector('.search-input').value = '';
   console.log(inputValue);
   addClass();
 }
-const inputHandler = (e) => {  
+const handleInput = (e) => {  
   if(e.target.value === '') {
     document.querySelector('.search-btn').disabled = true;
   } 
   else {
     document.querySelector('.search-btn').disabled = false;
   };
+}
+const handleParent = () => {
+  console.log(`handleParent: ${selectedElement}`);
+
+  selectedElement.classList.remove('selected-element-search');
+  selectedElement = parentNode;
+  selectedElement.classList.add('selected-element-search');
+  findRelative(selectedElement);
 }
 
 const addClass = () => {
@@ -56,6 +77,7 @@ const addClass = () => {
     if (selected !== undefined && selected !== null) {
       selectedElement = selected;
       selectedElement.classList.add('selected-element-search');
+      findRelative(selectedElement);
     }
     console.log(selectedElement); 
     
@@ -67,6 +89,7 @@ const addClass = () => {
     if (selected !== undefined && selected !== null) {
       selectedElement = selected;
       selectedElement.classList.add('selected-element-search');
+      findRelative(selectedElement);
     }
   }
 
@@ -94,6 +117,24 @@ function scrollToElement(theElement) {
 
 function appInit() {
   createAppStructure();
+}
+
+function findRelative(element) {
+  const tagNameParent = element.parentNode.tagName;
+  console.log(`tag: ${tagNameParent}`);
+
+  if(element.parentNode !== undefined 
+    && tagNameParent !== 'body'
+    && tagNameParent !== 'HTML'
+    && tagNameParent !== 'document'
+    ) {
+    console.log(element.parentNode);
+    document.querySelector('.parent-btn').disabled = false;
+    parentNode = element.parentNode;
+  } else {
+    document.querySelector('.parent-btn').disabled = true;
+    parentNode = '';
+  }
 }
 
 function createElement(tag, props, ...children) {
