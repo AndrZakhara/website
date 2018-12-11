@@ -5,8 +5,6 @@ let inputValue = '',
     parent = false,
     parentNode = '',
     children = false;
-     
-
 
 function createAppStructure() {
   const inputSearch = createElement('input', { className: 'search-input', type: 'text', placeholder: 'Selector' });
@@ -51,7 +49,7 @@ const handleInput = (e) => {
   };
 }
 const handleParent = () => {
-  console.log(`handleParent: ${selectedElement}`);
+  // console.log(`handleParent: ${selectedElement}`);
 
   selectedElement.classList.remove('selected-element-search');
   selectedElement = parentNode;
@@ -116,9 +114,10 @@ function findRelative(element) {
   console.log(`tag: ${tagNameParent}`);
 
   if(element.parentNode !== undefined 
-    && tagNameParent !== 'body'
+    && tagNameParent !== 'BODY'
     && tagNameParent !== 'HTML'
     && tagNameParent !== 'document'
+    && tagNameParent !== undefined
     ) {
     console.log(element.parentNode);
     document.querySelector('.parent-btn').disabled = false;
