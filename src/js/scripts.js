@@ -45,7 +45,7 @@
     document.querySelector('.search-input').value = '';
     document.querySelector('.search-btn').disabled = true;
 
-    try {
+    // try {
       if (selectedElement === '') {
         const selected = document.querySelector(inputValue);
 
@@ -55,7 +55,7 @@
           findRelative(selectedElement);
         }
       }
-      else if (selectedElement !== null || selectedElement !== undefined) {
+      else if (selectedElement !== null && selectedElement !== undefined) {
         selectedElement.classList.remove('selected-element-search');
         const selected = document.querySelector(inputValue);
 
@@ -64,14 +64,13 @@
           selectedElement.classList.add('selected-element-search');
           findRelative(selectedElement);
         }
-      }
-    }
-    catch (err) {
-      document.querySelector('.search-btn').disabled = true;
-      document.querySelector('.prev-btn').disabled = true;
-      document.querySelector('.next-btn').disabled = true;
-      document.querySelector('.parent-btn').disabled = true;
-      document.querySelector('.children-btn').disabled = true;
+      } 
+      else if(selected !== null) {
+        document.querySelector('.search-btn').disabled = true;
+        document.querySelector('.prev-btn').disabled = true;
+        document.querySelector('.next-btn').disabled = true;
+        document.querySelector('.parent-btn').disabled = true;
+        document.querySelector('.children-btn').disabled = true;
     }
 
     document.querySelector('.search-btn').disabled = true;
