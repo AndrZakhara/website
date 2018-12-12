@@ -1,5 +1,8 @@
+body {
+  position: relative;
+}
 .search-app-wrapper {
-  position: fixed;
+  position: absolute;
   padding-top: 28px;
   top: 20vh;
   right: 20px;

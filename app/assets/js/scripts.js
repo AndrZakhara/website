@@ -22,7 +22,6 @@
     const btnNext = createElement('input', {className: 'next-btn', type: 'button', value: 'Next'});
     const btnParent = createElement('input', {className: 'parent-btn', type: 'button', value: 'Parent'});
     const btnChildren = createElement('input', {className: 'children-btn', type: 'button', value: 'Children'});
-
     const btnClose = createElement('input', {className: 'close-btn', type: 'button', value: 'x'});
 
     const textFieldWrapper = createElement('div', {className: 'text-field-wrapper'}, inputSearch, btnSearch);
@@ -46,7 +45,7 @@
 
     document.body.insertAdjacentElement('beforeend', mainAppWrapper);
 
-    // dragBlock('.search-app-wrapper');
+    dragBlock('.search-app-wrapper');
   }
 
   const handleSearch = () => {
@@ -142,13 +141,13 @@
   }
 
   function findRelative(element) {
-    const tagNameParent = element.parentNode.tagName;
+    const tagNameParent = element.parentNode.tagName.toLowerCase();
     const child = element.children[0];
-
+    console.log(tagNameParent);
     if (
       element.parentNode !== undefined
-      // && tagNameParent !== 'BODY'
-      && tagNameParent !== 'HTML'
+      && tagNameParent !== 'body'
+      && tagNameParent !== 'html'
       && tagNameParent !== 'document'
       && tagNameParent !== undefined
     ) {
@@ -200,36 +199,45 @@
     }
   }
 
-  // function dragBlock(selector) {
-  //   let el = document.querySelector(selector);
-  //
-  //   el.ondragstart = function() {
-  //     return false;
-  //   };
-  //
-  //   el.onmousedown = function(e) {
-  //
-  //     el.style.position = 'absolute';
-  //     moveAt(e);
-  //     document.body.appendChild(el);
-  //
-  //     el.style.zIndex = 1000;
-  //
-  //     function moveAt(e) {
-  //       el.style.left = e.pageX - el.offsetWidth / 2 + 'px';
-  //       el.style.top = e.pageY - el.offsetHeight / 2 + 'px';
-  //     }
-  //
-  //     document.onmousemove = function(e) {
-  //       moveAt(e);
-  //     };
-  //
-  //     el.onmouseup = function() {
-  //       document.onmousemove = null;
-  //       el.onmouseup = null;
-  //     }
-  //   }
-  // }
+  function dragBlock(selector) {
+    let element = document.querySelector(selector);
+
+      element.onmousedown = function(e) {
+
+      let coords = getCoords(element);
+      let shiftX = e.pageX - coords.left;
+      let shiftY = e.pageY - coords.top;
+
+      element.style.zIndex = 1000; 
+
+      function moveAt(e) {
+        element.style.left = e.pageX - shiftX + 'px';
+        element.style.top = e.pageY - shiftY + 'px';
+      }
+
+      document.onmousemove = function(e) {
+        moveAt(e);
+      };
+
+      element.onmouseup = function() {
+        document.onmousemove = null;
+        element.onmouseup = null;
+      };
+
+    }
+
+    element.ondragstart = function() {
+      return false;
+    };
+
+    function getCoords(elem) {   // кроме IE8-
+      let box = elem.getBoundingClientRect();
+      return {
+        top: box.top + pageYOffset,
+        left: box.left + pageXOffset
+      };
+    }
+  }
 
   function createElement(tag, props, ...children) {
     const element = document.createElement(tag);
