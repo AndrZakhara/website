@@ -20,7 +20,7 @@
     const textFieldWrapper = createElement('div', {className: 'text-field-wrapper'}, inputSearch, btnSearch);
     const btnWrapper = createElement('div', {className: 'btn-wrapper'}, btnPrev, btnNext, btnParent, btnChildren, btnClose);
 
-    const mainAppWrapper = createElement('div', {className: 'selector-search-app'}, textFieldWrapper, btnWrapper);
+    const mainAppWrapper = createElement('div', {className: 'search-app-wrapper'}, textFieldWrapper, btnWrapper);
 
     btnSearch.disabled = true;
     btnPrev.disabled = true;
@@ -34,6 +34,7 @@
     btnChildren.addEventListener('click', handleChildren);
     btnNext.addEventListener('click', handleNext);
     btnPrev.addEventListener('click', handlePrevious);
+    btnClose.addEventListener('click', handleClose);
 
     document.body.insertAdjacentElement('beforeend', mainAppWrapper);
   }
@@ -97,6 +98,11 @@
 
   const handlePrevious = () => {
     helperForHandler(previousNode);
+  };
+
+  const handleClose = () => {
+    document.querySelector('.search-app-wrapper').remove();
+    selectedElement !== '' ? selectedElement.classList.remove('selected-element-search') : false;
   };
 
   const helperForHandler = (newSelected) => {
