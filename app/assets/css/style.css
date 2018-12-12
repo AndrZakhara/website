@@ -1376,14 +1376,14 @@ figure {
 
 .selector-search-app {
   position: fixed;
-  padding-top: 20px;
+  padding-top: 28px;
   top: 20vh;
   right: 20px;
   width: 400px;
   height: 100px;
   background-color: #c9e5ff;
   border-radius: 5px;
-  z-index: 10; }
+  z-index: 10000; }
 
 .text-field-wrapper {
   display: -ms-flexbox;
@@ -1398,6 +1398,7 @@ figure {
     width: 74.5%; }
 
 .btn-wrapper {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -1409,6 +1410,28 @@ figure {
 
 .selected-element-search {
   border: 2px solid red; }
+
+.close-btn {
+  position: absolute;
+  top: -62px;
+  right: 0px;
+  margin: 0;
+  padding: 0;
+  max-width: 24px;
+  max-height: 24px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  background: #c9e5ff;
+  color: darkred;
+  font: 700 20px/20px verdana, sans-serif;
+  border-radius: 50%;
+  outline: none;
+  border: none; }
+
+.close-btn:hover {
+  color: red;
+  cursor: pointer; }
 
 @media only screen and (min-width: 320px) {
   .section-content-item {

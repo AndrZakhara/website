@@ -15,8 +15,10 @@
     const btnParent = createElement('input', {className: 'parent-btn', type: 'button', value: 'Parent'});
     const btnChildren = createElement('input', {className: 'children-btn', type: 'button', value: 'Children'});
 
+    const btnClose = createElement('input', {className: 'close-btn', type: 'button', value: 'x'});
+
     const textFieldWrapper = createElement('div', {className: 'text-field-wrapper'}, inputSearch, btnSearch);
-    const btnWrapper = createElement('div', {className: 'btn-wrapper'}, btnPrev, btnNext, btnParent, btnChildren);
+    const btnWrapper = createElement('div', {className: 'btn-wrapper'}, btnPrev, btnNext, btnParent, btnChildren, btnClose);
 
     const mainAppWrapper = createElement('div', {className: 'selector-search-app'}, textFieldWrapper, btnWrapper);
 
@@ -125,7 +127,6 @@
   function findRelative(element) {
     const tagNameParent = element.parentNode.tagName;
     const child = element.children[0];
-    let siblingArr = [];
 
     if (
       element.parentNode !== undefined
